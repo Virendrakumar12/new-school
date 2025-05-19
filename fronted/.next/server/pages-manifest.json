@@ -1,1 +1,7 @@
-{}
+{
+  "/Dashboard/Student/StudentFee": "pages/Dashboard/Student/StudentFee.js",
+  "/Dashboard/Student/StudentInfo/FetchFee": "pages/Dashboard/Student/StudentInfo/FetchFee.js",
+  "/Dashboard/Student/StudentList": "pages/Dashboard/Student/StudentList.js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js"
+}

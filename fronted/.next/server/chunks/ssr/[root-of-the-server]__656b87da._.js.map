@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 63, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/viren/OneDrive/Desktop/final%20Project/fronted/pages/_document.js"],"sourcesContent":["import { Html, Head, Main, NextScript } from \"next/document\";\nimport Script from \"next/script\";\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        {/* Load Razorpay script the correct way */}\n        <Script\n          src=\"https://checkout.razorpay.com/v1/checkout.js\"\n          strategy=\"beforeInteractive\" // or try \"afterInteractive\" if this doesn't need to load immediately\n        />\n      </Head>\n      <body className=\"antialiased\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEe,SAAS;IACtB,qBACE,qKAAC,yHAAA,CAAA,OAAI;QAAC,MAAK;;0BACT,qKAAC,yHAAA,CAAA,OAAI;0BAEH,cAAA,qKAAC,uHAAA,CAAA,UAAM;oBACL,KAAI;oBACJ,UAAS,oBAAoB,qEAAqE;;;;;;;;;;;0BAGtG,qKAAC;gBAAK,WAAU;;kCACd,qKAAC,yHAAA,CAAA,OAAI;;;;;kCACL,qKAAC,yHAAA,CAAA,aAAU;;;;;;;;;;;;;;;;;AAInB","debugId":null}}]
+}

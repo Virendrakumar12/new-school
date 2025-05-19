@@ -1,6 +1,42 @@
 globalThis.__BUILD_MANIFEST = {
   "pages": {
-    "/_app": []
+    "/Dashboard/Student/StudentFee": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_e106707b._.js",
+      "static/chunks/[root-of-the-server]__3a25c70a._.js",
+      "static/chunks/pages_Dashboard_Student_StudentFee_5771e187.js",
+      "static/chunks/pages_Dashboard_Student_StudentFee_b16280e7.js"
+    ],
+    "/Dashboard/Student/StudentInfo/FetchFee": [
+      "static/chunks/node_modules_next_dist_8a201671._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_606be71e._.js",
+      "static/chunks/[root-of-the-server]__4684b440._.js",
+      "static/chunks/pages_Dashboard_Student_StudentInfo_FetchFee_5771e187.js",
+      "static/chunks/pages_Dashboard_Student_StudentInfo_FetchFee_ad66a442.js"
+    ],
+    "/Dashboard/Student/StudentList": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_5377f250._.js",
+      "static/chunks/[root-of-the-server]__b3a0d239._.js",
+      "static/chunks/pages_Dashboard_Student_StudentList_5771e187.js",
+      "static/chunks/pages_Dashboard_Student_StudentList_d5455f8e.js"
+    ],
+    "/_app": [
+      "static/chunks/[root-of-the-server]__13ce8678._.js",
+      "static/chunks/node_modules_next_b2e7ba59._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_9b584370._.js",
+      "static/chunks/styles_globals_79636149.css",
+      "static/chunks/pages__app_5771e187._.js",
+      "static/chunks/pages__app_4e3870a1._.js"
+    ]
   },
   "devFiles": [],
   "ampDevFiles": [],
