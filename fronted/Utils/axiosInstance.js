@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:8081/api', 
+  baseURL: 'https://new-school-g37a.onrender.com/api', 
   withCredentials: true, // your backend base URL
 });
 
