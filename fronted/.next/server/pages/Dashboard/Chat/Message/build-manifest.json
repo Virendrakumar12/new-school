@@ -1,0 +1,19 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/Dashboard/Chat/Message": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_285444e8._.js",
+      "static/chunks/[root-of-the-server]__d9814c7c._.js",
+      "static/chunks/pages_Dashboard_Chat_Message_5771e187.js",
+      "static/chunks/pages_Dashboard_Chat_Message_b8db5a32.js"
+    ]
+  },
+  "ampFirstPages": []
+}

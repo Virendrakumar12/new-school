@@ -1,0 +1,9 @@
+__turbopack_load_page_chunks__("/Dashboard/Student/AddStudent", [
+  "static/chunks/node_modules_next_1d3edfb1._.js",
+  "static/chunks/node_modules_react-dom_82bb97c6._.js",
+  "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+  "static/chunks/node_modules_0b8ff378._.js",
+  "static/chunks/[root-of-the-server]__a5137cf2._.js",
+  "static/chunks/pages_Dashboard_Student_AddStudent_jsx_5771e187._.js",
+  "static/chunks/pages_Dashboard_Student_AddStudent_jsx_695a9bd4._.js"
+])

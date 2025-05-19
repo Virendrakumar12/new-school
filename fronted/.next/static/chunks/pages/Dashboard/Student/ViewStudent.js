@@ -1,0 +1,8 @@
+__turbopack_load_page_chunks__("/Dashboard/Student/ViewStudent", [
+  "static/chunks/node_modules_next_dist_f1d2d383._.js",
+  "static/chunks/node_modules_react-dom_82bb97c6._.js",
+  "static/chunks/node_modules_2a5cf4bb._.js",
+  "static/chunks/[root-of-the-server]__a5a2641a._.js",
+  "static/chunks/pages_Dashboard_Student_ViewStudent_5771e187.js",
+  "static/chunks/pages_Dashboard_Student_ViewStudent_611fa9e2.js"
+])
