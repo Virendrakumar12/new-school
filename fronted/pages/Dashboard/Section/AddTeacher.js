@@ -25,7 +25,7 @@ useEffect(() => {
 
   const handleTeacherChange = (e) => {
     const selectedTeacherId = e.target.value;
-    console.log("selected teacher",selectedTeacherId);
+    
     // update section state with new classTeacher
    
     

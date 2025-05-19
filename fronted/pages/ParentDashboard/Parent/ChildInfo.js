@@ -10,8 +10,7 @@ const ParentChild = () => {
   // Get parent info and student list from Redux store
   const parent = useSelector((state) => state.parent.parent); // parent is logged in
   const { parentStudents=[], loading, error } = useSelector((state) => state.parent);
-console.log("parent",parent);
-console.log("parent student",parentStudents)
+
   // Fetch students for the logged-in parent
   useEffect(() => {
     if (parent?._id) {
@@ -20,12 +19,12 @@ console.log("parent student",parentStudents)
   }, [parent, dispatch]);
 
 const handleFee=(student)=>{
-  console.log("fee")
+ 
   console.log(student);
 }
 const handleView=(student)=>{
    dispatch(setStudent(student))
-     console.log(' fee table student:', student);
+     
     
 router.push("/ParentDashboard/Parent/StudentPay")
    

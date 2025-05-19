@@ -1,17 +1,5 @@
 {
   "pages": {
-    "/": [
-      "static/chunks/[root-of-the-server]__1b4fc86a._.js",
-      "static/chunks/node_modules_next_a166bb8c._.js",
-      "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_framer-motion_dist_es_56339d16._.js",
-      "static/chunks/node_modules_motion-dom_dist_es_b351e669._.js",
-      "static/chunks/node_modules_react-icons_fa_index_mjs_bad01e3f._.js",
-      "static/chunks/node_modules_react-icons_lib_75a63dfe._.js",
-      "static/chunks/node_modules_588585fe._.js",
-      "static/chunks/pages_index_5771e187._.js",
-      "static/chunks/pages_index_5332702d._.js"
-    ],
     "/AdminDashboard": [
       "static/chunks/node_modules_next_b2e7ba59._.js",
       "static/chunks/node_modules_react-dom_82bb97c6._.js",
@@ -21,16 +9,112 @@
       "static/chunks/pages_AdminDashboard_index_5771e187.js",
       "static/chunks/pages_AdminDashboard_index_ca6ffeb7.js"
     ],
-    "/Login": [
-      "static/chunks/node_modules_next_c545db75._.js",
+    "/Dashboard": [
+      "static/chunks/node_modules_next_dist_8a201671._.js",
       "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_framer-motion_dist_es_56339d16._.js",
-      "static/chunks/node_modules_motion-dom_dist_es_b351e669._.js",
       "static/chunks/node_modules_axios_lib_9aa2336a._.js",
-      "static/chunks/node_modules_10ddaa14._.js",
-      "static/chunks/[root-of-the-server]__6a39dd18._.js",
-      "static/chunks/pages_Login_index_5771e187.js",
-      "static/chunks/pages_Login_index_f0dbbecb.js"
+      "static/chunks/node_modules_0b8ff378._.js",
+      "static/chunks/[root-of-the-server]__5a2c0393._.js",
+      "static/chunks/pages_Dashboard_index_5771e187.js",
+      "static/chunks/pages_Dashboard_index_fc7c7410.js"
+    ],
+    "/Dashboard/Chat/Message": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_285444e8._.js",
+      "static/chunks/[root-of-the-server]__d9814c7c._.js",
+      "static/chunks/pages_Dashboard_Chat_Message_5771e187.js",
+      "static/chunks/pages_Dashboard_Chat_Message_b8db5a32.js"
+    ],
+    "/Dashboard/Class/ViewClass": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_4b16e655._.js",
+      "static/chunks/[root-of-the-server]__9737c826._.js",
+      "static/chunks/pages_Dashboard_Class_ViewClass_5771e187.js",
+      "static/chunks/pages_Dashboard_Class_ViewClass_42c92c6d.js"
+    ],
+    "/Dashboard/Section/SectionList": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_cc4c24da._.js",
+      "static/chunks/[root-of-the-server]__90124442._.js",
+      "static/chunks/pages_Dashboard_Section_SectionList_5771e187.js",
+      "static/chunks/pages_Dashboard_Section_SectionList_edaf5e73.js"
+    ],
+    "/Dashboard/Student/AddStudent": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_0b8ff378._.js",
+      "static/chunks/[root-of-the-server]__a5137cf2._.js",
+      "static/chunks/pages_Dashboard_Student_AddStudent_jsx_5771e187._.js",
+      "static/chunks/pages_Dashboard_Student_AddStudent_jsx_695a9bd4._.js"
+    ],
+    "/Dashboard/Student/StudentFee": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_e106707b._.js",
+      "static/chunks/[root-of-the-server]__3a25c70a._.js",
+      "static/chunks/pages_Dashboard_Student_StudentFee_5771e187.js",
+      "static/chunks/pages_Dashboard_Student_StudentFee_b16280e7.js"
+    ],
+    "/Dashboard/Student/StudentInfo/FetchFee": [
+      "static/chunks/node_modules_next_dist_8a201671._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_606be71e._.js",
+      "static/chunks/[root-of-the-server]__4684b440._.js",
+      "static/chunks/pages_Dashboard_Student_StudentInfo_FetchFee_5771e187.js",
+      "static/chunks/pages_Dashboard_Student_StudentInfo_FetchFee_ad66a442.js"
+    ],
+    "/Dashboard/Student/StudentList": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_5377f250._.js",
+      "static/chunks/[root-of-the-server]__b3a0d239._.js",
+      "static/chunks/pages_Dashboard_Student_StudentList_5771e187.js",
+      "static/chunks/pages_Dashboard_Student_StudentList_d5455f8e.js"
+    ],
+    "/Dashboard/Subject/SubjectList": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_c51ff4db._.js",
+      "static/chunks/[root-of-the-server]__64e303a0._.js",
+      "static/chunks/pages_Dashboard_Subject_SubjectList_5771e187.js",
+      "static/chunks/pages_Dashboard_Subject_SubjectList_758026f3.js"
+    ],
+    "/Dashboard/Teacher/TeacherList": [
+      "static/chunks/node_modules_next_b2e7ba59._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_a121c202._.js",
+      "static/chunks/[root-of-the-server]__54a7e562._.js",
+      "static/chunks/pages_Dashboard_Teacher_TeacherList_5771e187.js",
+      "static/chunks/pages_Dashboard_Teacher_TeacherList_4dfc363f.js"
+    ],
+    "/Dashboard/Teacher/UpdateTeacher": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_0b8ff378._.js",
+      "static/chunks/[root-of-the-server]__249590c8._.js",
+      "static/chunks/pages_Dashboard_Teacher_UpdateTeacher_5771e187.js",
+      "static/chunks/pages_Dashboard_Teacher_UpdateTeacher_e487a68d.js"
+    ],
+    "/Dashboard/Teacher/ViewTeacher": [
+      "static/chunks/node_modules_next_dist_f1d2d383._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_6990bf53._.js",
+      "static/chunks/[root-of-the-server]__b5e5173c._.js",
+      "static/chunks/pages_Dashboard_Teacher_ViewTeacher_5771e187.js",
+      "static/chunks/pages_Dashboard_Teacher_ViewTeacher_47306bd2.js"
     ],
     "/_app": [
       "static/chunks/[root-of-the-server]__13ce8678._.js",

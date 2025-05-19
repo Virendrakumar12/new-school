@@ -38,7 +38,7 @@ const SectionList = () => {
   dispatch(getSectionsByClassId(selectedClass?._id))
     .unwrap()
     .then((res) => {
-      console.log("Fetched sections:", res);
+     
       if (!res || res.length === 0) {
         dispatch(clearSectionsList());
       }
@@ -50,7 +50,7 @@ const SectionList = () => {
 }, [selectedClass?._id]); // ✅ use the _id directly as a dependency
 
 const handleActionConfirm = () => {
-   console.log("selected section",selectedSection._id)
+  
    const sectionId=selectedSection._id;
  dispatch(deleteSection(sectionId))
 
@@ -62,7 +62,7 @@ const handleActionConfirm = () => {
     dispatch(setSection(section));
    
     router.push("/Dashboard/Section/AddTeacher");
-    console.log("Add teacher for:", section.sectionName);
+    
     //router.push("/Dashboard/Section/ClassTeacher")
     
   };
@@ -71,7 +71,7 @@ const handleActionConfirm = () => {
     dispatch(setSection(section));
   
     router.push("/Dashboard/Section/Info/Detail");
-    console.log("View section:", section);
+    
     
   };
   const handleModalClose = () => {
@@ -80,7 +80,7 @@ const handleActionConfirm = () => {
   };
   const handleUpdate=(section)=>{
     dispatch(setSection(section));
-    console.log("handle update");
+    
     router.push("/Dashboard/Section/Info/UpdateForm");
   }
   const handleAddSubject = (section) => {
@@ -88,7 +88,7 @@ const handleActionConfirm = () => {
     dispatch(setSection(section));
    
     router.push("/Dashboard/Section/AddSubject");
-    console.log("Add subject to:", section.sectionName);
+    
   }
   const handleDelete = (sectionId) => {
     // e.g., confirm & delete subject

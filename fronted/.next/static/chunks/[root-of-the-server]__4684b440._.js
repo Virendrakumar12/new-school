@@ -877,8 +877,6 @@ const MonthlyPayments = ()=>{
     const { fees, loading, error } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["useSelector"])({
         "MonthlyPayments.useSelector": (state)=>state.student
     }["MonthlyPayments.useSelector"]);
-    console.log("all feees ", fees);
-    console.log("fetch monthly payment", studentDetails);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "MonthlyPayments.useEffect": ()=>{
             if (studentDetails?._id) {
@@ -945,14 +943,14 @@ const MonthlyPayments = ()=>{
                 children: "Your Monthly Fee Details"
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-                lineNumber: 75,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: "Loading..."
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-                lineNumber: 77,
+                lineNumber: 76,
                 columnNumber: 19
             }, this),
             error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -963,7 +961,7 @@ const MonthlyPayments = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-                lineNumber: 78,
+                lineNumber: 77,
                 columnNumber: 17
             }, this),
             !loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FeeMonthlyPayment$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -971,13 +969,13 @@ const MonthlyPayments = ()=>{
                 onPay: handlePay
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-                lineNumber: 80,
+                lineNumber: 79,
                 columnNumber: 20
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-        lineNumber: 74,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 };

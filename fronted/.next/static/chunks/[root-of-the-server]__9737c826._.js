@@ -940,7 +940,6 @@ const ViewClasses = ()=>{
         console.log(classData);
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$classSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["setClass"])(classData));
         router.push("/Dashboard/Section/SectionList");
-        console.log("handle view");
     };
     const handleModalClose = ()=>{
         setShowModal(false); // Close the modal
@@ -958,7 +957,6 @@ const ViewClasses = ()=>{
     const handleSectionSubmit = (e)=>{
         e.preventDefault();
         const sectionName = e.target.sectionName.value;
-        console.log("Creating section:", sectionName, "for class:", selectedClassForSection._id);
         // Dispatch action here
         // dispatch(addSection(selectedClassForSection._id, sectionName));
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$SectionActions$2e$js__$5b$client$5d$__$28$ecmascript$29$__["createSection"])({
@@ -1216,7 +1214,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
-const PAGE_PATH = "/Dashboard/Class/AddClass";
+const PAGE_PATH = "/Dashboard/Class/ViewClass";
 (window.__NEXT_P = window.__NEXT_P || []).push([
     PAGE_PATH,
     ()=>{

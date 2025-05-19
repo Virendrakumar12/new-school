@@ -13,7 +13,7 @@ export default function TeacherDashboard() {
   }, [dispatch]);
 
   const startChat = (studentId) => {
-    console.log('Start chat with student:', studentId);
+    
   };
 
   return (

@@ -8,8 +8,7 @@ const MonthlyPayments = () => {
   const dispatch = useDispatch();
   const { studentDetails } = useSelector((state) => state.student);
   const { fees, loading, error } = useSelector((state) => state.student);
-  console.log("all feees ",fees)
-console.log("fetch monthly payment",studentDetails)
+  
   useEffect(() => {
     if (studentDetails?._id) {
       dispatch(fetchMonthlyFees(studentDetails._id));

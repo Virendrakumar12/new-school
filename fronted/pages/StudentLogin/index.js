@@ -13,8 +13,7 @@ export default function StudentLoginPage() {
   const handleLogin = (e) => {
     e.preventDefault();
     // Perform login action (call your backend here)
-    console.log(dob,parentCode
-    )
+    
    const result=  dispatch(loginStudent({ dob, parentCode }));
    if (result) {
         router.push('/StudentDashboard/Profile'); // redirect after login

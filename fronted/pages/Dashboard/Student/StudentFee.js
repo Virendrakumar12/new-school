@@ -59,20 +59,19 @@ const anyFilterApplied = searchTerm || selectedClassId || selectedSectionId;
   const handleView = (student) => {
 
     dispatch(setStudent(student))
-   console.log(' fee table student:', student);
+  
    router.push("/Dashboard/Student/StudentInfo/FetchFee")
   };
 const handleAdd=(student)=>{
   
    dispatch(setStudent(student));
-   console.log("i am at fee adding ")
+  
    router.push("/Dashboard/Student/StudentFeeForm")
 }
   const handleEdit = (student) => {
 
     dispatch(setStudent(student))
   
-    console.log('Edit student:', student);
     // Open edit form
     router.push("/Dashboard/Student/UpdateFee")
   };
@@ -82,7 +81,7 @@ const handleAdd=(student)=>{
       setSelectedStudent(null); // Reset the selected class
     };
   const handleActionConfirm = () => {
-     console.log("selected section",selectedStudent._id)
+    
      const studentId=selectedStudent._id;
   dispatch(deleteMonthlyPaymentsByStudent(studentId)).unwrap()
   
@@ -97,7 +96,7 @@ const handleAdd=(student)=>{
       ; // Close the modal after action
     };
   const handleDelete = (id) => {
-     console.log("student id",id);
+     
     setSelectedStudent(students.find((item) => item._id === id));
     setShowModal(true);
     // Confirm and delete

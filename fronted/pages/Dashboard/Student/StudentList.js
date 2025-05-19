@@ -16,9 +16,7 @@ const StudentList = () => {
   const { students } = useSelector(state => state.student);
   const { classes } = useSelector(state => state.class);
   const { sections } = useSelector(state => state.section);
-  console.log("student log",students)
-  console.log("class",classes);
-  console.log("sections",sections);
+  
   const [selectedClassId, setSelectedClassId] = useState('');
   const [selectedSectionId, setSelectedSectionId] = useState('');
       const [showModal, setShowModal] = useState(false); // For controlling the modal visibility
@@ -61,7 +59,7 @@ const anyFilterApplied = searchTerm || selectedClassId || selectedSectionId;
 
     dispatch(setStudent(student))
     router.push("/Dashboard/Student/StudentInfo/StudentDetail")
-    console.log('View student:', student);
+    
     // Open modal or navigate to detail page
   };
 
@@ -69,7 +67,7 @@ const anyFilterApplied = searchTerm || selectedClassId || selectedSectionId;
 
     dispatch(setStudent(student))
     router.push("/Dashboard/Student/UpdateStudent")
-    console.log('Edit student:', student);
+   
     // Open edit form
   };
   const handleModalClose = () => {
@@ -77,14 +75,14 @@ const anyFilterApplied = searchTerm || selectedClassId || selectedSectionId;
     setSelectedStudent(null); // Reset the selected class
   };
 const handleActionConfirm = () => {
-   console.log("selected section",selectedStudent._id)
+  
    const studentId=selectedStudent._id;
 dispatch(deleteStudent(studentId))
 
     handleModalClose(); // Close the modal after action
   };
   const handleDelete = (id) => {
-    console.log("student id",id);
+   
     setSelectedStudent(students.find((item) => item._id === id));
     setShowModal(true);
     

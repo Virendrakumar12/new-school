@@ -1242,9 +1242,6 @@ const StudentList = ()=>{
     const { sections } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["useSelector"])({
         "StudentList.useSelector": (state)=>state.section
     }["StudentList.useSelector"]);
-    console.log("student log", students);
-    console.log("class", classes);
-    console.log("sections", sections);
     const [selectedClassId, setSelectedClassId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [selectedSectionId, setSelectedSectionId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [showModal, setShowModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false); // For controlling the modal visibility
@@ -1281,13 +1278,11 @@ const StudentList = ()=>{
     const handleView = (student)=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$StudentSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["setStudent"])(student));
         router.push("/Dashboard/Student/StudentInfo/StudentDetail");
-        console.log('View student:', student);
     // Open modal or navigate to detail page
     };
     const handleEdit = (student)=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$StudentSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["setStudent"])(student));
         router.push("/Dashboard/Student/UpdateStudent");
-        console.log('Edit student:', student);
     // Open edit form
     };
     const handleModalClose = ()=>{
@@ -1295,13 +1290,11 @@ const StudentList = ()=>{
         setSelectedStudent(null); // Reset the selected class
     };
     const handleActionConfirm = ()=>{
-        console.log("selected section", selectedStudent._id);
         const studentId = selectedStudent._id;
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$StudentActions$2e$js__$5b$client$5d$__$28$ecmascript$29$__["deleteStudent"])(studentId));
         handleModalClose(); // Close the modal after action
     };
     const handleDelete = (id)=>{
-        console.log("student id", id);
         setSelectedStudent(students.find((item)=>item._id === id));
         setShowModal(true);
     // Confirm and delete
@@ -1317,7 +1310,7 @@ const StudentList = ()=>{
                         children: "All Students"
                     }, void 0, false, {
                         fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                        lineNumber: 99,
+                        lineNumber: 97,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1336,7 +1329,7 @@ const StudentList = ()=>{
                                         children: "Select Class"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                        lineNumber: 109,
+                                        lineNumber: 107,
                                         columnNumber: 7
                                     }, this),
                                     classes.map((cls)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1344,13 +1337,13 @@ const StudentList = ()=>{
                                             children: cls.className
                                         }, cls._id, false, {
                                             fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                            lineNumber: 111,
+                                            lineNumber: 109,
                                             columnNumber: 9
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                lineNumber: 101,
+                                lineNumber: 99,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1363,7 +1356,7 @@ const StudentList = ()=>{
                                         children: "Select Section"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                        lineNumber: 120,
+                                        lineNumber: 118,
                                         columnNumber: 7
                                     }, this),
                                     filteredSections.map((sec)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1371,13 +1364,13 @@ const StudentList = ()=>{
                                             children: sec.sectionName
                                         }, sec._id, false, {
                                             fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                            lineNumber: 122,
+                                            lineNumber: 120,
                                             columnNumber: 9
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                lineNumber: 115,
+                                lineNumber: 113,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1388,19 +1381,19 @@ const StudentList = ()=>{
                                 className: "border p-2 w-64 rounded-md"
                             }, void 0, false, {
                                 fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                lineNumber: 126,
+                                lineNumber: 124,
                                 columnNumber: 5
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                        lineNumber: 100,
+                        lineNumber: 98,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                lineNumber: 98,
+                lineNumber: 96,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$StudentCard$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1410,7 +1403,7 @@ const StudentList = ()=>{
                 onDelete: handleDelete
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                lineNumber: 138,
+                lineNumber: 136,
                 columnNumber: 1
             }, this),
             showModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1426,14 +1419,14 @@ const StudentList = ()=>{
                                     size: 24
                                 }, void 0, false, {
                                     fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                    lineNumber: 154,
+                                    lineNumber: 152,
                                     columnNumber: 15
                                 }, this),
                                 " "
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                            lineNumber: 150,
+                            lineNumber: 148,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1446,7 +1439,7 @@ const StudentList = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                    lineNumber: 160,
+                                    lineNumber: 158,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1455,13 +1448,13 @@ const StudentList = ()=>{
                                     children: "Confirm Delete"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                                    lineNumber: 161,
+                                    lineNumber: 159,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                            lineNumber: 159,
+                            lineNumber: 157,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1470,24 +1463,24 @@ const StudentList = ()=>{
                             children: "Cancel"
                         }, void 0, false, {
                             fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                            lineNumber: 170,
+                            lineNumber: 168,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                    lineNumber: 149,
+                    lineNumber: 147,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-                lineNumber: 146,
+                lineNumber: 144,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/Dashboard/Student/StudentList.js",
-        lineNumber: 97,
+        lineNumber: 95,
         columnNumber: 5
     }, this);
 };

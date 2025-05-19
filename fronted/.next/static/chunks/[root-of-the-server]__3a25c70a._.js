@@ -1301,17 +1301,14 @@ const StudentList = ()=>{
     ]);
     const handleView = (student)=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$StudentSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["setStudent"])(student));
-        console.log(' fee table student:', student);
         router.push("/Dashboard/Student/StudentInfo/FetchFee");
     };
     const handleAdd = (student)=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$StudentSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["setStudent"])(student));
-        console.log("i am at fee adding ");
         router.push("/Dashboard/Student/StudentFeeForm");
     };
     const handleEdit = (student)=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$StudentSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["setStudent"])(student));
-        console.log('Edit student:', student);
         // Open edit form
         router.push("/Dashboard/Student/UpdateFee");
     };
@@ -1320,7 +1317,6 @@ const StudentList = ()=>{
         setSelectedStudent(null); // Reset the selected class
     };
     const handleActionConfirm = ()=>{
-        console.log("selected section", selectedStudent._id);
         const studentId = selectedStudent._id;
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$StudentActions$2e$js__$5b$client$5d$__$28$ecmascript$29$__["deleteMonthlyPaymentsByStudent"])(studentId)).unwrap().then(()=>{
             handleModalClose();
@@ -1335,7 +1331,6 @@ const StudentList = ()=>{
         }); // Close the modal after action
     };
     const handleDelete = (id)=>{
-        console.log("student id", id);
         setSelectedStudent(students.find((item)=>item._id === id));
         setShowModal(true);
     // Confirm and delete
@@ -1351,7 +1346,7 @@ const StudentList = ()=>{
                         children: "All Students"
                     }, void 0, false, {
                         fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                        lineNumber: 109,
+                        lineNumber: 108,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1370,7 +1365,7 @@ const StudentList = ()=>{
                                         children: "Select Class"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                        lineNumber: 119,
+                                        lineNumber: 118,
                                         columnNumber: 7
                                     }, this),
                                     classes.map((cls)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1378,13 +1373,13 @@ const StudentList = ()=>{
                                             children: cls.className
                                         }, cls._id, false, {
                                             fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                            lineNumber: 121,
+                                            lineNumber: 120,
                                             columnNumber: 9
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                lineNumber: 111,
+                                lineNumber: 110,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1397,7 +1392,7 @@ const StudentList = ()=>{
                                         children: "Select Section"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                        lineNumber: 130,
+                                        lineNumber: 129,
                                         columnNumber: 7
                                     }, this),
                                     filteredSections.map((sec)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1405,13 +1400,13 @@ const StudentList = ()=>{
                                             children: sec.sectionName
                                         }, sec._id, false, {
                                             fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                            lineNumber: 132,
+                                            lineNumber: 131,
                                             columnNumber: 9
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                lineNumber: 125,
+                                lineNumber: 124,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1422,19 +1417,19 @@ const StudentList = ()=>{
                                 className: "border p-2 w-64 rounded-md"
                             }, void 0, false, {
                                 fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                lineNumber: 136,
+                                lineNumber: 135,
                                 columnNumber: 5
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                        lineNumber: 110,
+                        lineNumber: 109,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                lineNumber: 108,
+                lineNumber: 107,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$StudentFee$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1445,7 +1440,7 @@ const StudentList = ()=>{
                 onDelete: handleDelete
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                lineNumber: 148,
+                lineNumber: 147,
                 columnNumber: 1
             }, this),
             showModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1461,14 +1456,14 @@ const StudentList = ()=>{
                                     size: 24
                                 }, void 0, false, {
                                     fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                    lineNumber: 165,
+                                    lineNumber: 164,
                                     columnNumber: 15
                                 }, this),
                                 " "
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                            lineNumber: 161,
+                            lineNumber: 160,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1481,7 +1476,7 @@ const StudentList = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                    lineNumber: 171,
+                                    lineNumber: 170,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1490,13 +1485,13 @@ const StudentList = ()=>{
                                     children: "Confirm Delete"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                                    lineNumber: 172,
+                                    lineNumber: 171,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                            lineNumber: 170,
+                            lineNumber: 169,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1505,24 +1500,24 @@ const StudentList = ()=>{
                             children: "Cancel"
                         }, void 0, false, {
                             fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                            lineNumber: 181,
+                            lineNumber: 180,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                    lineNumber: 160,
+                    lineNumber: 159,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-                lineNumber: 157,
+                lineNumber: 156,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/Dashboard/Student/StudentFee.js",
-        lineNumber: 107,
+        lineNumber: 106,
         columnNumber: 5
     }, this);
 };

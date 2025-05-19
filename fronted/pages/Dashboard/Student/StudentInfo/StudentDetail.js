@@ -16,7 +16,7 @@ import {
 
 const StudentInfoPage = () => {
   const { studentDetails } = useSelector((state) => state.student);
-  console.log(studentDetails);
+  
   if (!studentDetails) {
     return (
       <p className="text-center text-gray-500 mt-10">No student data found.</p>

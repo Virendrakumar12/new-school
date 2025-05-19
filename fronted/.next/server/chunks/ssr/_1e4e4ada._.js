@@ -215,7 +215,6 @@ const SectionList = ()=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["clearSection"])());
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["clearSectionsList"])());
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$SectionActions$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["getSectionsByClassId"])(selectedClass?._id)).unwrap().then((res)=>{
-            console.log("Fetched sections:", res);
             if (!res || res.length === 0) {
                 dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["clearSectionsList"])());
             }
@@ -227,7 +226,6 @@ const SectionList = ()=>{
         selectedClass?._id
     ]); // ✅ use the _id directly as a dependency
     const handleActionConfirm = ()=>{
-        console.log("selected section", selectedSection._id);
         const sectionId = selectedSection._id;
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$SectionActions$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["deleteSection"])(sectionId));
         handleModalClose(); // Close the modal after action
@@ -236,14 +234,12 @@ const SectionList = ()=>{
         // e.g., open modal to assign teacher
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["setSection"])(section));
         router.push("/Dashboard/Section/AddTeacher");
-        console.log("Add teacher for:", section.sectionName);
     //router.push("/Dashboard/Section/ClassTeacher")
     };
     const handleView = (section)=>{
         // Navigate or open modal to show full section + subjects
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["setSection"])(section));
         router.push("/Dashboard/Section/Info/Detail");
-        console.log("View section:", section);
     };
     const handleModalClose = ()=>{
         setShowModal(false); // Close the modal
@@ -251,14 +247,12 @@ const SectionList = ()=>{
     };
     const handleUpdate = (section)=>{
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["setSection"])(section));
-        console.log("handle update");
         router.push("/Dashboard/Section/Info/UpdateForm");
     };
     const handleAddSubject = (section)=>{
         // e.g., open modal to add subject
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["setSection"])(section));
         router.push("/Dashboard/Section/AddSubject");
-        console.log("Add subject to:", section.sectionName);
     };
     const handleDelete = (sectionId)=>{
         // e.g., confirm & delete subject

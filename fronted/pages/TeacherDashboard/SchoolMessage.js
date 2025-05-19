@@ -8,10 +8,10 @@ export default function TeacherDashboard() {
   const { teacher } = useSelector((state) => state.teacher); 
    // ✅ updated slice path
 
-   console.log("teacher portal",teacher)
+  
   const [school, setSchool] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-console.log("school teaer portal",school)
+
   useEffect(() => {
     const fetchSchool = async () => {
       try {

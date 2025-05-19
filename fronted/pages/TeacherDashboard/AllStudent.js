@@ -16,9 +16,7 @@ const StudentList = () => {
   const { students } = useSelector(state => state.student);
   const { classes } = useSelector(state => state.class);
   const { sections } = useSelector(state => state.section);
-  console.log("student log",students)
-  console.log("class",classes);
-  console.log("sections",sections);
+  
   const [selectedClassId, setSelectedClassId] = useState('');
   const [selectedSectionId, setSelectedSectionId] = useState('');
   

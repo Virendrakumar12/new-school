@@ -180,7 +180,6 @@ const ViewClasses = ()=>{
         console.log(classData);
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$classSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["setClass"])(classData));
         router.push("/Dashboard/Section/SectionList");
-        console.log("handle view");
     };
     const handleModalClose = ()=>{
         setShowModal(false); // Close the modal
@@ -198,7 +197,6 @@ const ViewClasses = ()=>{
     const handleSectionSubmit = (e)=>{
         e.preventDefault();
         const sectionName = e.target.sectionName.value;
-        console.log("Creating section:", sectionName, "for class:", selectedClassForSection._id);
         // Dispatch action here
         // dispatch(addSection(selectedClassForSection._id, sectionName));
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$SectionActions$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["createSection"])({
@@ -848,8 +846,8 @@ const unstable_getServerSideProps = (0, __TURBOPACK__imported__module__$5b$proje
 const routeModule = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$modules$2f$pages$2f$module$2e$compiled$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["PagesRouteModule"]({
     definition: {
         kind: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$kind$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["RouteKind"].PAGES,
-        page: "/Dashboard/Class/AddClass",
-        pathname: "/Dashboard/Class/AddClass",
+        page: "/Dashboard/Class/ViewClass",
+        pathname: "/Dashboard/Class/ViewClass",
         // The following aren't used in production.
         bundlePath: '',
         filename: ''

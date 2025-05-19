@@ -15,8 +15,8 @@ const subjectRoutes = require("./routes/subjectRoutes");
 const parentRoutes = require("./routes/parentRoutes");
 const studentRoutes = require("./routes/studentRoutes");
 const feeRoutes =require("./routes/feeRoutes")
-dotenv.config();
-const port = 8081;
+dotenv.config({});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -44,7 +44,7 @@ main().then(() => {
 async function main() {
     await mongoose.connect(process.env.MONGO_URI);
 }
-
+const port = 8081;
 app.use("/api/school", authSchool);
 app.use("/api/class", classRoutes);
 app.use("/api/section", sectionRoutes);
@@ -61,7 +61,6 @@ socketLogic(io);
 app.get("/", (req, res) => {
     res.send("hello");
 });
-
 
 server.listen(port, () => {
     console.log(`server is running on port ${port}`);

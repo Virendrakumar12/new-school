@@ -14,7 +14,7 @@ const UpdateStudentForm = () => {
   const router = useRouter();
   const [selectedClassId, setSelectedClassId] = useState('');
   const student = useSelector((state) => state.student.studentDetails);
-console.log("studetn class id",student.currentSection.classId._id)
+
 
 const { classes } = useSelector((state) => state.class);
  const { sections } = useSelector((state) => state.section);
@@ -76,7 +76,7 @@ useEffect(() => {
 
   const handleSubmit =async (e) => {
     e.preventDefault();
-    console.log("form data",formData)
+   
   const res= await dispatch(updateStudent({ id: student._id, updatedData:formData }));
    if(res){
   alert("student updated successfully")

@@ -9,7 +9,7 @@ const GenerateFeeForm = () => {
   const dispatch = useDispatch();
   const router=useRouter();
   const { studentDetails } = useSelector((state) => state.student);
-console.log("student fee ",studentDetails)
+
   const [formData, setFormData] = useState({
     admissionMonth: '',
     year: new Date().getFullYear(),
@@ -40,7 +40,7 @@ console.log("student fee ",studentDetails)
     tuitionFee:tuitionFee,
     busFee:busFee
   };
- console.log("fee data",data);
+ 
  const result= dispatch(generateMonthlyFees(data));
       if(result){
         alert("fee generated successfully")

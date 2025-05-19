@@ -56,7 +56,7 @@ const handleView=(classId)=>{
   console.log(classData);
      dispatch(setClass(classData))
      router.push("/Dashboard/Section/SectionList")
-    console.log("handle view")
+   
 };
   const handleModalClose = () => {
     setShowModal(false); // Close the modal
@@ -76,7 +76,7 @@ const handleView=(classId)=>{
 const handleSectionSubmit = (e) => {
   e.preventDefault();
   const sectionName = e.target.sectionName.value;
-  console.log("Creating section:", sectionName, "for class:", selectedClassForSection._id);
+  
 
   // Dispatch action here
   // dispatch(addSection(selectedClassForSection._id, sectionName));

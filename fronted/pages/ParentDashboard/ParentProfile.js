@@ -4,7 +4,7 @@ import { UserCircle } from "lucide-react";
 
 const ParentProfile = () => {
   const parent = useSelector((state) => state.parent.parent); // adjust key if needed
- console.log("parent information at page",parent)
+ 
   if (!parent) {
     return (
       <div className="text-center mt-10 text-red-600 text-lg">

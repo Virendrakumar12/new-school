@@ -277,8 +277,6 @@ const MonthlyPayments = ()=>{
     const dispatch = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$redux__$5b$external$5d$__$28$react$2d$redux$2c$__esm_import$29$__["useDispatch"])();
     const { studentDetails } = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$redux__$5b$external$5d$__$28$react$2d$redux$2c$__esm_import$29$__["useSelector"])((state)=>state.student);
     const { fees, loading, error } = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$redux__$5b$external$5d$__$28$react$2d$redux$2c$__esm_import$29$__["useSelector"])((state)=>state.student);
-    console.log("all feees ", fees);
-    console.log("fetch monthly payment", studentDetails);
     (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
         if (studentDetails?._id) {
             dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$StudentActions$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["fetchMonthlyFees"])(studentDetails._id));
@@ -343,14 +341,14 @@ const MonthlyPayments = ()=>{
                 children: "Your Monthly Fee Details"
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-                lineNumber: 75,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                 children: "Loading..."
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-                lineNumber: 77,
+                lineNumber: 76,
                 columnNumber: 19
             }, this),
             error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -361,7 +359,7 @@ const MonthlyPayments = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-                lineNumber: 78,
+                lineNumber: 77,
                 columnNumber: 17
             }, this),
             !loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FeeMonthlyPayment$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -369,13 +367,13 @@ const MonthlyPayments = ()=>{
                 onPay: handlePay
             }, void 0, false, {
                 fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-                lineNumber: 80,
+                lineNumber: 79,
                 columnNumber: 20
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/Dashboard/Student/StudentInfo/FetchFee.js",
-        lineNumber: 74,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 };
