@@ -12,5 +12,4 @@ router.get('/getAllSubject',protect,  subjectController.getAllSubjects);
 router.get('/getSubject/:id',protect,  subjectController.getSubjectById);
 router.put('/updateSubject/:id',protect,  subjectController.updateSubject);
 router.delete('/deleteSubject/:id',protect,  subjectController.deleteSubject);
-
 module.exports = router;

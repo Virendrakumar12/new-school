@@ -27,7 +27,7 @@ const corsOptions = {
     credentials: true,
 };
 
-app.use(cors(corsOptions));
+
 
 
 app.use(cors(corsOptions));  // ✅ Apply CORS for REST API
@@ -44,7 +44,7 @@ main().then(() => {
 async function main() {
     await mongoose.connect(process.env.MONGO_URI);
 }
-const port = 8081;
+const port =process.env.PORT ||8081;
 app.use("/api/school", authSchool);
 app.use("/api/class", classRoutes);
 app.use("/api/section", sectionRoutes);
