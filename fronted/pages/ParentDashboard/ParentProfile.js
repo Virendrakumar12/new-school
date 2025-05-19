@@ -28,11 +28,11 @@ const ParentProfile = () => {
 
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
         <div>
-          <p className="font-semibold">Father's Name</p>
+          <p className="font-semibold">{`Father's Name`}</p>
           <p>{parent.fatherName}</p>
         </div>
         <div>
-          <p className="font-semibold">Mother's Name</p>
+          <p className="font-semibold">{`Mother's Name`}</p>
           <p>{parent.motherName}</p>
         </div>
         <div>

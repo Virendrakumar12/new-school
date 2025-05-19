@@ -1,9 +1,0 @@
-__turbopack_load_page_chunks__("/ParentLogin", [
-  "static/chunks/node_modules_next_1d3edfb1._.js",
-  "static/chunks/node_modules_react-dom_82bb97c6._.js",
-  "static/chunks/node_modules_axios_lib_9aa2336a._.js",
-  "static/chunks/node_modules_211e1004._.js",
-  "static/chunks/[root-of-the-server]__42241f2e._.js",
-  "static/chunks/pages_ParentLogin_index_5771e187.js",
-  "static/chunks/pages_ParentLogin_index_44734b94.js"
-])
