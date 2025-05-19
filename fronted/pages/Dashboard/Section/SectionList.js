@@ -47,7 +47,7 @@ const SectionList = () => {
       console.error("Error fetching sections:", err);
       dispatch(clearSectionsList());
     });
-}, [selectedClass?._id]); // ✅ use the _id directly as a dependency
+}, [dispatch,selectedClass?._id]); // ✅ use the _id directly as a dependency
 
 const handleActionConfirm = () => {
   

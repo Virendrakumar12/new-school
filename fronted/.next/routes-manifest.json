@@ -1,0 +1,301 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/AdminDashboard",
+      "regex": "^/AdminDashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/AdminDashboard(?:/)?$"
+    },
+    {
+      "page": "/Dashboard",
+      "regex": "^/Dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Chat/Message",
+      "regex": "^/Dashboard/Chat/Message(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Chat/Message(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Class/AddClass",
+      "regex": "^/Dashboard/Class/AddClass(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Class/AddClass(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Class/ViewClass",
+      "regex": "^/Dashboard/Class/ViewClass(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Class/ViewClass(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/School/Profile",
+      "regex": "^/Dashboard/School/Profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/School/Profile(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Section/AddSubject",
+      "regex": "^/Dashboard/Section/AddSubject(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Section/AddSubject(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Section/AddTeacher",
+      "regex": "^/Dashboard/Section/AddTeacher(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Section/AddTeacher(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Section/Info/Detail",
+      "regex": "^/Dashboard/Section/Info/Detail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Section/Info/Detail(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Section/Info/UpdateForm",
+      "regex": "^/Dashboard/Section/Info/UpdateForm(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Section/Info/UpdateForm(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Section/SectionList",
+      "regex": "^/Dashboard/Section/SectionList(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Section/SectionList(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/AddStudent",
+      "regex": "^/Dashboard/Student/AddStudent(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/AddStudent(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/StudentFee",
+      "regex": "^/Dashboard/Student/StudentFee(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/StudentFee(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/StudentFeeForm",
+      "regex": "^/Dashboard/Student/StudentFeeForm(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/StudentFeeForm(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/StudentInfo/FetchFee",
+      "regex": "^/Dashboard/Student/StudentInfo/FetchFee(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/StudentInfo/FetchFee(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/StudentInfo/StudentDetail",
+      "regex": "^/Dashboard/Student/StudentInfo/StudentDetail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/StudentInfo/StudentDetail(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/StudentList",
+      "regex": "^/Dashboard/Student/StudentList(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/StudentList(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/UpdateFee",
+      "regex": "^/Dashboard/Student/UpdateFee(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/UpdateFee(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/UpdateStudent",
+      "regex": "^/Dashboard/Student/UpdateStudent(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/UpdateStudent(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Student/ViewStudent",
+      "regex": "^/Dashboard/Student/ViewStudent(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Student/ViewStudent(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Subject/AddSubject",
+      "regex": "^/Dashboard/Subject/AddSubject(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Subject/AddSubject(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Subject/SubjectList",
+      "regex": "^/Dashboard/Subject/SubjectList(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Subject/SubjectList(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Teacher/AddTeacher",
+      "regex": "^/Dashboard/Teacher/AddTeacher(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Teacher/AddTeacher(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Teacher/TeacherList",
+      "regex": "^/Dashboard/Teacher/TeacherList(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Teacher/TeacherList(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Teacher/UpdateTeacher",
+      "regex": "^/Dashboard/Teacher/UpdateTeacher(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Teacher/UpdateTeacher(?:/)?$"
+    },
+    {
+      "page": "/Dashboard/Teacher/ViewTeacher",
+      "regex": "^/Dashboard/Teacher/ViewTeacher(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dashboard/Teacher/ViewTeacher(?:/)?$"
+    },
+    {
+      "page": "/LandingPage/About",
+      "regex": "^/LandingPage/About(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LandingPage/About(?:/)?$"
+    },
+    {
+      "page": "/LandingPage/Academics",
+      "regex": "^/LandingPage/Academics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LandingPage/Academics(?:/)?$"
+    },
+    {
+      "page": "/LandingPage/Admissions",
+      "regex": "^/LandingPage/Admissions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LandingPage/Admissions(?:/)?$"
+    },
+    {
+      "page": "/LandingPage/Apple",
+      "regex": "^/LandingPage/Apple(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LandingPage/Apple(?:/)?$"
+    },
+    {
+      "page": "/LandingPage/Contact",
+      "regex": "^/LandingPage/Contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LandingPage/Contact(?:/)?$"
+    },
+    {
+      "page": "/LandingPage/Home",
+      "regex": "^/LandingPage/Home(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LandingPage/Home(?:/)?$"
+    },
+    {
+      "page": "/Login",
+      "regex": "^/Login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Login(?:/)?$"
+    },
+    {
+      "page": "/ParentDashboard/Parent/ChildInfo",
+      "regex": "^/ParentDashboard/Parent/ChildInfo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ParentDashboard/Parent/ChildInfo(?:/)?$"
+    },
+    {
+      "page": "/ParentDashboard/Parent/StudentPay",
+      "regex": "^/ParentDashboard/Parent/StudentPay(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ParentDashboard/Parent/StudentPay(?:/)?$"
+    },
+    {
+      "page": "/ParentDashboard/ParentProfile",
+      "regex": "^/ParentDashboard/ParentProfile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ParentDashboard/ParentProfile(?:/)?$"
+    },
+    {
+      "page": "/ParentLogin",
+      "regex": "^/ParentLogin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ParentLogin(?:/)?$"
+    },
+    {
+      "page": "/StudentDashboard/Profile",
+      "regex": "^/StudentDashboard/Profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/StudentDashboard/Profile(?:/)?$"
+    },
+    {
+      "page": "/StudentLogin",
+      "regex": "^/StudentLogin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/StudentLogin(?:/)?$"
+    },
+    {
+      "page": "/TeacherDashboard/AllStudent",
+      "regex": "^/TeacherDashboard/AllStudent(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/TeacherDashboard/AllStudent(?:/)?$"
+    },
+    {
+      "page": "/TeacherDashboard/Chat/Message",
+      "regex": "^/TeacherDashboard/Chat/Message(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/TeacherDashboard/Chat/Message(?:/)?$"
+    },
+    {
+      "page": "/TeacherDashboard/SchoolMessage",
+      "regex": "^/TeacherDashboard/SchoolMessage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/TeacherDashboard/SchoolMessage(?:/)?$"
+    },
+    {
+      "page": "/TeacherLogin",
+      "regex": "^/TeacherLogin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/TeacherLogin(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

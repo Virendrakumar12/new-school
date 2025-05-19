@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 const PrincipalCard = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -25,9 +25,10 @@ const PrincipalCard = () => {
           {/* Principal Photo */}
           <div className="flex-shrink-0 mb-6 md:mb-0 relative">
             <div className="rounded-full border-4 border-blue-500 p-1 hover:border-blue-700 transition duration-300 transform hover:scale-110 shadow-md hover:shadow-xl cursor-pointer">
-              <img
+              <Image
                 src="/images/pr.jpg"
                 alt="Principal"
+                width={500} height={300} 
                 onClick={handleImageClick}
                 className="w-40 h-40 rounded-full object-cover transition-transform duration-500"
               />
