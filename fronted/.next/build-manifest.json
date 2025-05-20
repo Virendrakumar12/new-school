@@ -39,14 +39,14 @@
       "static/chunks/pages_Dashboard_Section_SectionList_5771e187.js",
       "static/chunks/pages_Dashboard_Section_SectionList_edaf5e73.js"
     ],
-    "/Dashboard/Student/StudentInfo/FetchFee": [
-      "static/chunks/node_modules_next_dist_8a201671._.js",
+    "/Dashboard/Student/StudentList": [
+      "static/chunks/node_modules_next_1d3edfb1._.js",
       "static/chunks/node_modules_react-dom_82bb97c6._.js",
       "static/chunks/node_modules_axios_lib_9aa2336a._.js",
-      "static/chunks/node_modules_606be71e._.js",
-      "static/chunks/[root-of-the-server]__4684b440._.js",
-      "static/chunks/pages_Dashboard_Student_StudentInfo_FetchFee_5771e187.js",
-      "static/chunks/pages_Dashboard_Student_StudentInfo_FetchFee_ad66a442.js"
+      "static/chunks/node_modules_5377f250._.js",
+      "static/chunks/[root-of-the-server]__b3a0d239._.js",
+      "static/chunks/pages_Dashboard_Student_StudentList_5771e187.js",
+      "static/chunks/pages_Dashboard_Student_StudentList_d5455f8e.js"
     ],
     "/Login": [
       "static/chunks/node_modules_next_c545db75._.js",

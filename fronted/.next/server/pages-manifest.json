@@ -3,7 +3,7 @@
   "/AdminDashboard": "pages/AdminDashboard.js",
   "/Dashboard/Class/ViewClass": "pages/Dashboard/Class/ViewClass.js",
   "/Dashboard/Section/SectionList": "pages/Dashboard/Section/SectionList.js",
-  "/Dashboard/Student/StudentInfo/FetchFee": "pages/Dashboard/Student/StudentInfo/FetchFee.js",
+  "/Dashboard/Student/StudentList": "pages/Dashboard/Student/StudentList.js",
   "/Login": "pages/Login.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",

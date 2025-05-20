@@ -8,7 +8,7 @@ const SocketProvider = ({ children, userId, userType }) => {
   const [isConnected, setIsConnected] = useState(false);
 
   useEffect(() => {
-    const newSocket = io('http://localhost:8081', {
+    const newSocket = io('https://new-school-g37a.onrender.com', {
       autoConnect: true,
     });
 
