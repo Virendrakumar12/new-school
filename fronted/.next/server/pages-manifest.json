@@ -1,5 +1,9 @@
 {
   "/": "pages/index.js",
+  "/AdminDashboard": "pages/AdminDashboard.js",
+  "/Dashboard": "pages/Dashboard.js",
+  "/Dashboard/Student/StudentList": "pages/Dashboard/Student/StudentList.js",
+  "/Login": "pages/Login.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js"

@@ -20,8 +20,19 @@ dotenv.config({});
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://new-school-5kv1.vercel.app'
+];
 const corsOptions = {
-    origin:process.env.FRONTEND_URL,
+    origin:function (origin, callback) {
+    if (!origin) return callback(null, true); // Allow non-browser requests (like Postman)
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
