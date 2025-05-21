@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://new-school-g37a.onrender.com/api', 
-  withCredentials: true, // your backend base URL
+  baseURL: process.env.NEXT_PUBLIC_API_URL, // ✅ Use env variable
+  withCredentials: true,
 });
 
 // Automatically attach token
