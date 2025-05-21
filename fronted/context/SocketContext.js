@@ -8,7 +8,7 @@ const SocketProvider = ({ children, userId, userType }) => {
   const [isConnected, setIsConnected] = useState(false);
 
   useEffect(() => {
-    const newSocket = io('https://new-school-g37a.onrender.com', {
+    const newSocket = io(process.env.NEXT_PUBLIC_SOCKET_URL, {
       autoConnect: true,
     });
 
