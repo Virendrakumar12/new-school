@@ -69,7 +69,7 @@ const Hero = ()=>{
                                         lineNumber: 22,
                                         columnNumber: 15
                                     }, this),
-                                    "International School"
+                                    "International public  School"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Hero.js",
@@ -1390,7 +1390,7 @@ const PrincipalCard = ()=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
                                     className: "text-3xl font-bold text-blue-900 mb-2 relative inline-block",
                                     children: [
-                                        "CHOTAN MAHTO",
+                                        "CHHOTAN MAHTO",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                             className: "block h-1 bg-blue-400 mt-1 w-16 group-hover:w-24 transition-all duration-300 rounded-full"
                                         }, void 0, false, {
@@ -1414,7 +1414,7 @@ const PrincipalCard = ()=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                     className: "text-gray-700 leading-relaxed transition-opacity duration-500 group-hover:opacity-90",
-                                    children: "With over 10 years of experience in educational leadership, CHOTAN MAHTO is committed to nurturing young minds and fostering an environment of academic excellence and holistic development. His vision is to empower students to become responsible global citizens with a strong moral foundation."
+                                    children: "With over 10 years of experience in educational leadership, CHHOTAN MAHTO is committed to nurturing young minds and fostering an environment of academic excellence and holistic development. His vision is to empower students to become responsible global citizens with a strong moral foundation."
                                 }, void 0, false, {
                                     fileName: "[project]/components/PrincipalCard.js",
                                     lineNumber: 47,
@@ -1511,34 +1511,28 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$
 ;
 const teachers = [
     {
-        name: 'Amit Sharma',
+        name: 'DINESH MAHTO',
         subject: 'Mathematics',
-        bio: 'Amit Sharma has been teaching Mathematics for over 12 years and is known for his engaging and interactive teaching style.',
+        bio: 'DINESH MAHTO has been teaching Mathematics for over 12 years and is known for his engaging and interactive teaching style.',
         image: '/images/teachers/amit.jpg'
     },
     {
-        name: 'Neha Verma',
-        subject: 'Science',
-        bio: 'Neha specializes in simplifying complex science concepts and has helped many students fall in love with the subject.',
+        name: 'KUSHUM LATA',
+        subject: 'BIOLOGY',
+        bio: 'KUSHUM LATA specializes in simplifying complex BIOLOGY OF SCIENCE concepts and has helped many students fall in love with the subject.',
         image: '/images/teachers/neha.jpg'
     },
     {
-        name: 'Rahul Sinha',
+        name: 'PINTU KUMAR',
         subject: 'English',
-        bio: 'Rahul has a knack for literature and communication, inspiring students through poetry and storytelling.',
+        bio: 'PINTU has a knack for literature and communication, inspiring students through poetry and storytelling.',
         image: '/images/teachers/rahul.jpg'
     },
     {
-        name: 'Sunita Das',
+        name: 'SANTOSH MAHTO',
         subject: 'Social Science',
-        bio: 'Sunita connects history and civics with real-world events to create thoughtful global citizens.',
+        bio: 'SANTOSH connects history and civics with real-world events to create thoughtful global citizens.',
         image: '/images/teachers/sunita.jpg'
-    },
-    {
-        name: 'Virendra Kumar',
-        subject: 'Computer Science',
-        bio: 'Virendra is passionate about technology and programming, making students industry-ready with hands-on projects.',
-        image: '/images/teachers/vire.jpg'
     }
 ];
 const TeacherCardSlider = ()=>{
@@ -1580,7 +1574,7 @@ const TeacherCardSlider = ()=>{
                 children: "Meet Our Teachers"
             }, void 0, false, {
                 fileName: "[project]/components/TeacherCardSlider.js",
-                lineNumber: 74,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1594,7 +1588,7 @@ const TeacherCardSlider = ()=>{
                                 children: teacher.subject
                             }, void 0, false, {
                                 fileName: "[project]/components/TeacherCardSlider.js",
-                                lineNumber: 80,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -1602,13 +1596,13 @@ const TeacherCardSlider = ()=>{
                                 children: teacher.bio
                             }, void 0, false, {
                                 fileName: "[project]/components/TeacherCardSlider.js",
-                                lineNumber: 83,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/TeacherCardSlider.js",
-                        lineNumber: 79,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1622,12 +1616,12 @@ const TeacherCardSlider = ()=>{
                                     className: "w-full h-full object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/components/TeacherCardSlider.js",
-                                    lineNumber: 88,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/TeacherCardSlider.js",
-                                lineNumber: 87,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -1635,19 +1629,19 @@ const TeacherCardSlider = ()=>{
                                 children: teacher.name
                             }, void 0, false, {
                                 fileName: "[project]/components/TeacherCardSlider.js",
-                                lineNumber: 94,
+                                lineNumber: 89,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/TeacherCardSlider.js",
-                        lineNumber: 86,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/TeacherCardSlider.js",
-                lineNumber: 78,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1659,7 +1653,7 @@ const TeacherCardSlider = ()=>{
                         children: "⬅️ Prev"
                     }, void 0, false, {
                         fileName: "[project]/components/TeacherCardSlider.js",
-                        lineNumber: 101,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -1668,19 +1662,19 @@ const TeacherCardSlider = ()=>{
                         children: "Next ➡️"
                     }, void 0, false, {
                         fileName: "[project]/components/TeacherCardSlider.js",
-                        lineNumber: 107,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/TeacherCardSlider.js",
-                lineNumber: 100,
+                lineNumber: 95,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/TeacherCardSlider.js",
-        lineNumber: 73,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 };

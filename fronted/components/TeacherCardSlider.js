@@ -2,35 +2,30 @@ import React, { useEffect, useState, useRef } from 'react';
 
 const teachers = [
   {
-    name: 'Amit Sharma',
+    name: 'DINESH MAHTO',
     subject: 'Mathematics',
-    bio: 'Amit Sharma has been teaching Mathematics for over 12 years and is known for his engaging and interactive teaching style.',
+    bio: 'DINESH MAHTO has been teaching Mathematics for over 12 years and is known for his engaging and interactive teaching style.',
     image: '/images/teachers/amit.jpg',
   },
   {
-    name: 'Neha Verma',
-    subject: 'Science',
-    bio: 'Neha specializes in simplifying complex science concepts and has helped many students fall in love with the subject.',
+    name: 'KUSHUM LATA',
+    subject: 'BIOLOGY',
+    bio: 'KUSHUM LATA specializes in simplifying complex BIOLOGY OF SCIENCE concepts and has helped many students fall in love with the subject.',
     image: '/images/teachers/neha.jpg',
   },
   {
-    name: 'Rahul Sinha',
+    name: 'PINTU KUMAR',
     subject: 'English',
-    bio: 'Rahul has a knack for literature and communication, inspiring students through poetry and storytelling.',
+    bio: 'PINTU has a knack for literature and communication, inspiring students through poetry and storytelling.',
     image: '/images/teachers/rahul.jpg',
   },
   {
-    name: 'Sunita Das',
+    name: 'SANTOSH MAHTO',
     subject: 'Social Science',
-    bio: 'Sunita connects history and civics with real-world events to create thoughtful global citizens.',
+    bio: 'SANTOSH connects history and civics with real-world events to create thoughtful global citizens.',
     image: '/images/teachers/sunita.jpg',
   },
-  {
-    name: 'Virendra Kumar',
-    subject: 'Computer Science',
-    bio: 'Virendra is passionate about technology and programming, making students industry-ready with hands-on projects.',
-    image: '/images/teachers/vire.jpg',
-  },
+  
 ];
 
 const TeacherCardSlider = () => {

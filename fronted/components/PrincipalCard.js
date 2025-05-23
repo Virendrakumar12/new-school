@@ -40,12 +40,12 @@ const PrincipalCard = () => {
           {/* Info */}
           <div>
             <h2 className="text-3xl font-bold text-blue-900 mb-2 relative inline-block">
-              CHOTAN MAHTO
+              CHHOTAN MAHTO
               <span className="block h-1 bg-blue-400 mt-1 w-16 group-hover:w-24 transition-all duration-300 rounded-full"></span>
             </h2>
             <p className="text-blue-700 font-semibold mb-4 italic tracking-wide">Principal, Sunrise Public School</p>
             <p className="text-gray-700 leading-relaxed transition-opacity duration-500 group-hover:opacity-90">
-              With over 10 years of experience in educational leadership, CHOTAN MAHTO is committed to nurturing young minds and fostering an environment of academic excellence and holistic development. His vision is to empower students to become responsible global citizens with a strong moral foundation.
+              With over 10 years of experience in educational leadership, CHHOTAN MAHTO is committed to nurturing young minds and fostering an environment of academic excellence and holistic development. His vision is to empower students to become responsible global citizens with a strong moral foundation.
             </p>
           </div>
         </div>

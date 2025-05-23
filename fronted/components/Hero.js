@@ -20,7 +20,7 @@ const Hero = () => {
             <h1 className="text-6xl font-bold leading-tight mb-8 tracking-tight text-blue-900">
               Sun Rise
               <br />
-              International School
+              International public  School
             </h1>
             <motion.p
               initial={{ opacity: 0 }}
