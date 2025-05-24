@@ -1,10 +1,7 @@
 {
-  "/Dashboard/Chat/Message": "pages/Dashboard/Chat/Message.js",
-  "/Dashboard/Class/ViewClass": "pages/Dashboard/Class/ViewClass.js",
-  "/Dashboard/Section/SectionList": "pages/Dashboard/Section/SectionList.js",
-  "/Dashboard/Student/StudentInfo/StudentDetail": "pages/Dashboard/Student/StudentInfo/StudentDetail.js",
-  "/Dashboard/Student/StudentList": "pages/Dashboard/Student/StudentList.js",
-  "/Dashboard/Teacher/TeacherList": "pages/Dashboard/Teacher/TeacherList.js",
+  "/": "pages/index.js",
+  "/AdminDashboard": "pages/AdminDashboard.js",
+  "/Login": "pages/Login.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js"

@@ -628,7 +628,6 @@ function Dashboard({ children }) {
     const handleLogout = ()=>{
         dispatch(__TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$schoolSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["logoutSchool"]);
     };
-    console.log("school info", schoolInfo);
     const menuItems = [
         {
             title: 'CLASS',
