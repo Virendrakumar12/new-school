@@ -211,7 +211,6 @@ const SectionList = ()=>{
             console.warn("Waiting for selectedClass...");
             return;
         }
-        console.log("Dispatching getSectionsByClassId with:", selectedClass?._id);
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["clearSection"])());
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["clearSectionsList"])());
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$SectionActions$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["getSectionsByClassId"])(selectedClass?._id)).unwrap().then((res)=>{

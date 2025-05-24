@@ -53,7 +53,7 @@ const ViewClasses = () => {
   };
 const handleView=(classId)=>{
   const classData = classes.find((item) => item._id === classId);
-  console.log(classData);
+  
      dispatch(setClass(classData))
      router.push("/Dashboard/Section/SectionList")
    

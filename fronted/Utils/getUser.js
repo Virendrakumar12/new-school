@@ -9,8 +9,7 @@ export const useCurrentUser = () => {
        try {
          const decoded = jwtDecode(token); 
         
-       console.log("token id",decoded._id);
-       console.log(" token decode userType",decoded.role);
+       
          return {userId:decoded._id, userType:decoded.role}
          
        } catch (err) {

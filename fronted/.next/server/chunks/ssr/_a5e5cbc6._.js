@@ -24,7 +24,6 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 const HomeCard = ()=>{
     const dispatch = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$redux__$5b$external$5d$__$28$react$2d$redux$2c$__esm_import$29$__["useDispatch"])();
     const { dashboardCounts, loading, error } = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$redux__$5b$external$5d$__$28$react$2d$redux$2c$__esm_import$29$__["useSelector"])((state)=>state.schoolLogin);
-    console.log("dasjbaoard count", dashboardCounts.totalTeachers);
     const [schoolStats, setSchoolStats] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])({
         studentCount: 0,
         teacherCount: 0,

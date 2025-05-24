@@ -22,7 +22,7 @@ export const fetchClasses = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const res = await axiosInstance.get('/class/getAllClass'); // adjust endpoint if needed
-      console.log("this is response",res);
+      
       return res.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.error || 'Something went wrong');

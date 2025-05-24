@@ -643,10 +643,11 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [client] (ecmascript)");
 ;
 const axiosInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: 'https://new-school-g37a.onrender.com/api',
+    baseURL: ("TURBOPACK compile-time value", "http://localhost:8080/api"),
     withCredentials: true
 });
 // Automatically attach token
@@ -686,7 +687,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js
 ;
 const createSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('section/create', async ({ sectionName, classId }, { rejectWithValue })=>{
     try {
-        console.log(sectionName, classId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('/section/addSection', {
             sectionName,
             classId
@@ -702,7 +702,6 @@ const updateSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
             classTeacher,
             subjects
         });
-        console.log("i am action of section controller", res.data);
         return res.data;
     } catch (error) {
         return rejectWithValue(error.response?.data?.error || 'Failed to update section');
@@ -710,7 +709,6 @@ const updateSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
 });
 const deleteSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('section/delete', async (sectionId, { rejectWithValue })=>{
     try {
-        console.log("section id", sectionId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].delete(`/section/deleteSection/${sectionId}`);
         return res.data;
     } catch (error) {
@@ -729,10 +727,7 @@ const assignClassTeacher = (0, __TURBOPACK__imported__module__$5b$project$5d2f$n
 });
 const getSectionsByClassId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('section/getByClassId', async (classId, { rejectWithValue })=>{
     try {
-        console.log("i am get by classId", classId);
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get(`/section/getAllSectionById/${classId}`);
-        console.log("in action part of get section by classid ", response);
-        console.log("res.data", response.data);
         const cleanedData = response.data.filter((item)=>item !== null && typeof item === 'object');
         return cleanedData;
     } catch (error) {
@@ -750,7 +745,6 @@ const getSections = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 });
 const assignSubjectToSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('section/assignSubject', async ({ sectionId, subjectId, teacherId }, { rejectWithValue })=>{
     try {
-        console.log(" iam at assign subject", sectionId, subjectId, teacherId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post(`/section/add/assignSubject/${sectionId}`, {
             subjectId,
             teacherId
@@ -981,7 +975,6 @@ const SectionList = ()=>{
                 console.warn("Waiting for selectedClass...");
                 return;
             }
-            console.log("Dispatching getSectionsByClassId with:", selectedClass?._id);
             dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["clearSection"])());
             dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$sectionSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["clearSectionsList"])());
             dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Actions$2f$SectionActions$2e$js__$5b$client$5d$__$28$ecmascript$29$__["getSectionsByClassId"])(selectedClass?._id)).unwrap().then({

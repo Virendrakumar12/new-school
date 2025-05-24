@@ -156,7 +156,6 @@ const loginSchool = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$redu
 const getSchoolDashboardCounts = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('school/getDashboardCounts', async (_, { rejectWithValue })=>{
     try {
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].get('/school/getTotal');
-        console.log("res get cound", res);
         return res.data;
     } catch (error) {
         return rejectWithValue(error.response?.data?.message || 'Failed to load dashboard data');
@@ -265,7 +264,6 @@ function Dashboard({ children }) {
     const handleLogout = ()=>{
         dispatch(__TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$schoolSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["logoutSchool"]);
     };
-    console.log("school info", schoolInfo);
     const menuItems = [
         {
             title: 'CLASS',
@@ -742,7 +740,6 @@ const createClass = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$redu
 const fetchClasses = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('class/fetchAll', async (_, { rejectWithValue })=>{
     try {
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].get('/class/getAllClass'); // adjust endpoint if needed
-        console.log("this is response", res);
         return res.data;
     } catch (error) {
         return rejectWithValue(error.response?.data?.error || 'Something went wrong');
@@ -886,7 +883,6 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 ;
 const createSection = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('section/create', async ({ sectionName, classId }, { rejectWithValue })=>{
     try {
-        console.log(sectionName, classId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].post('/section/addSection', {
             sectionName,
             classId
@@ -902,7 +898,6 @@ const updateSection = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$re
             classTeacher,
             subjects
         });
-        console.log("i am action of section controller", res.data);
         return res.data;
     } catch (error) {
         return rejectWithValue(error.response?.data?.error || 'Failed to update section');
@@ -910,7 +905,6 @@ const updateSection = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$re
 });
 const deleteSection = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('section/delete', async (sectionId, { rejectWithValue })=>{
     try {
-        console.log("section id", sectionId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].delete(`/section/deleteSection/${sectionId}`);
         return res.data;
     } catch (error) {
@@ -929,10 +923,7 @@ const assignClassTeacher = (0, __TURBOPACK__imported__module__$5b$externals$5d2f
 });
 const getSectionsByClassId = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('section/getByClassId', async (classId, { rejectWithValue })=>{
     try {
-        console.log("i am get by classId", classId);
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].get(`/section/getAllSectionById/${classId}`);
-        console.log("in action part of get section by classid ", response);
-        console.log("res.data", response.data);
         const cleanedData = response.data.filter((item)=>item !== null && typeof item === 'object');
         return cleanedData;
     } catch (error) {
@@ -950,7 +941,6 @@ const getSections = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$redu
 });
 const assignSubjectToSection = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('section/assignSubject', async ({ sectionId, subjectId, teacherId }, { rejectWithValue })=>{
     try {
-        console.log(" iam at assign subject", sectionId, subjectId, teacherId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].post(`/section/add/assignSubject/${sectionId}`, {
             subjectId,
             teacherId
@@ -1395,9 +1385,7 @@ const updateSubject = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$re
 });
 const deleteSubject = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('subject/delete', async (id, { rejectWithValue })=>{
     try {
-        console.log("subject id", id);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].delete(`/subject/deleteSubject/${id}`);
-        console.log("subject res ", res);
         return res.data;
     } catch (error) {
         return rejectWithValue(error.response?.data?.message || 'Failed to delete subject');
@@ -1535,7 +1523,6 @@ const createStudent = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$re
 });
 const loginStudent = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('student/login', async (formData, { rejectWithValue })=>{
     try {
-        console.log("i am at student login", formData);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].post('/student/loginStudent', formData);
         // ✅ Store token in localStorage
         if ("TURBOPACK compile-time falsy", 0) {
@@ -1564,7 +1551,6 @@ const getStudentById = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$r
 });
 const updateStudent = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('student/updateStudent', async ({ id, updatedData }, { rejectWithValue })=>{
     try {
-        console.log("i am at updated student", updatedData);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].put(`/student/updatedStudent/${id}`, updatedData); // your route: PUT /students/:studentId
         return res.data;
     } catch (err) {
@@ -1589,7 +1575,6 @@ const generateMonthlyFees = (0, __TURBOPACK__imported__module__$5b$externals$5d2
 });
 const fetchMonthlyFees = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('monthlyFee/fetchMonthlyFees', async (studentId, { rejectWithValue })=>{
     try {
-        console.log("fetch student  in table id", studentId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].get(`/fees/student/${studentId}`);
         return res.data;
     } catch (err) {
@@ -1795,7 +1780,6 @@ const createParent = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$red
 const loginParent = (0, __TURBOPACK__imported__module__$5b$externals$5d2f40$reduxjs$2f$toolkit__$5b$external$5d$__$2840$reduxjs$2f$toolkit$2c$__esm_import$29$__["createAsyncThunk"])('parent/login', async (formData, { rejectWithValue })=>{
     try {
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"].post('/parent/loginParent', formData);
-        console.log("parent information", res);
         if ("TURBOPACK compile-time falsy", 0) {
             "TURBOPACK unreachable";
         }

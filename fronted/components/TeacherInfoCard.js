@@ -14,7 +14,7 @@ import {
 
 const TeacherInfoCard = () => {
   const { teacher } = useSelector((state) => state.teacher);
-  console.log(teacher)
+  
   if (!teacher) {
     return <p className="text-center text-gray-500 mt-10">No teacher data found.</p>;
   }

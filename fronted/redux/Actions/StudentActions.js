@@ -20,7 +20,7 @@ export const loginStudent = createAsyncThunk(
   'student/login',
   async (formData, { rejectWithValue }) => {
     try {
-      console.log("i am at student login",formData)
+    
       const res = await axiosInstance.post('/student/loginStudent', formData);
 
       // ✅ Store token in localStorage
@@ -65,7 +65,7 @@ export const getAllStudents = createAsyncThunk(
     'student/updateStudent',
     async ({ id, updatedData }, { rejectWithValue }) => {
       try {
-        console.log("i am at updated student",updatedData)
+       
         const res = await axiosInstance.put(`/student/updatedStudent/${id}`, updatedData); // your route: PUT /students/:studentId
         return res.data;
       } catch (err) {
@@ -105,7 +105,7 @@ export const fetchMonthlyFees = createAsyncThunk(
   'monthlyFee/fetchMonthlyFees',
   async (studentId, { rejectWithValue }) => {
     try {
-      console.log("fetch student  in table id",studentId);
+     
       const res = await axiosInstance.get(`/fees/student/${studentId}`);
       return res.data;
     } catch (err) {

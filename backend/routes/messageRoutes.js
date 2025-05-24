@@ -56,7 +56,7 @@ router.get('/messages/:conversationId', async (req, res) => {
 // Route to send a message
 router.post('/sendMessage', async (req, res) => {
     try {
-        console.log(req.body);
+        
       const { senderId, receiverId, message, senderType, receiverType } = req.body;
   
       const senderObjectId = new mongoose.Types.ObjectId(senderId);
@@ -105,7 +105,7 @@ router.post('/sendMessage', async (req, res) => {
 router.get('/getConversation', async (req, res) => {
   try {
     const { participant1, participant2 } = req.query;
-    console.log("Fetching conversation between:", req.query);
+    
 
     const participant1Id = new mongoose.Types.ObjectId(participant1);
     const participant2Id = new mongoose.Types.ObjectId(participant2);
@@ -120,7 +120,7 @@ router.get('/getConversation', async (req, res) => {
     
     
        if(conversation){
-         console.log("toal conversation",conversation._id);
+         
         res.status(200).json({
       conversationId: conversation._id,
       participants: conversation.participants,

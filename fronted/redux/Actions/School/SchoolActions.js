@@ -34,7 +34,7 @@ export const getSchoolDashboardCounts = createAsyncThunk(
     try {
       
       const res = await axiosInstance.get('/school/getTotal');
-      console.log("res get cound",res)
+     
       return res.data;
     } catch (error) {
       return rejectWithValue(

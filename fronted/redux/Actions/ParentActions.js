@@ -18,7 +18,7 @@ export const loginParent = createAsyncThunk(
   async (formData, { rejectWithValue }) => {
     try {
       const res = await axiosInstance.post('/parent/loginParent', formData);
-       console.log("parent information",res);
+      
       if (typeof window !== 'undefined') {
         localStorage.setItem('token', res.data.token);
       }

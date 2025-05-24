@@ -521,7 +521,6 @@ const loginSchool = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 const getSchoolDashboardCounts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('school/getDashboardCounts', async (_, { rejectWithValue })=>{
     try {
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get('/school/getTotal');
-        console.log("res get cound", res);
         return res.data;
     } catch (error) {
         return rejectWithValue(error.response?.data?.message || 'Failed to load dashboard data');

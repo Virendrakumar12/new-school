@@ -31,7 +31,7 @@ const SectionList = () => {
     return;
   }
 
-  console.log("Dispatching getSectionsByClassId with:", selectedClass?._id);
+
   dispatch(clearSection());
   dispatch(clearSectionsList());
 

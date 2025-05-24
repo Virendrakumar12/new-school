@@ -519,7 +519,6 @@ const createClass = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 const fetchClasses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('class/fetchAll', async (_, { rejectWithValue })=>{
     try {
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get('/class/getAllClass'); // adjust endpoint if needed
-        console.log("this is response", res);
         return res.data;
     } catch (error) {
         return rejectWithValue(error.response?.data?.error || 'Something went wrong');
@@ -687,7 +686,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js
 ;
 const createSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('section/create', async ({ sectionName, classId }, { rejectWithValue })=>{
     try {
-        console.log(sectionName, classId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('/section/addSection', {
             sectionName,
             classId
@@ -703,7 +701,6 @@ const updateSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
             classTeacher,
             subjects
         });
-        console.log("i am action of section controller", res.data);
         return res.data;
     } catch (error) {
         return rejectWithValue(error.response?.data?.error || 'Failed to update section');
@@ -711,7 +708,6 @@ const updateSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
 });
 const deleteSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('section/delete', async (sectionId, { rejectWithValue })=>{
     try {
-        console.log("section id", sectionId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].delete(`/section/deleteSection/${sectionId}`);
         return res.data;
     } catch (error) {
@@ -730,10 +726,7 @@ const assignClassTeacher = (0, __TURBOPACK__imported__module__$5b$project$5d2f$n
 });
 const getSectionsByClassId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('section/getByClassId', async (classId, { rejectWithValue })=>{
     try {
-        console.log("i am get by classId", classId);
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get(`/section/getAllSectionById/${classId}`);
-        console.log("in action part of get section by classid ", response);
-        console.log("res.data", response.data);
         const cleanedData = response.data.filter((item)=>item !== null && typeof item === 'object');
         return cleanedData;
     } catch (error) {
@@ -751,7 +744,6 @@ const getSections = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 });
 const assignSubjectToSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$redux$2d$toolkit$2e$modern$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createAsyncThunk"])('section/assignSubject', async ({ sectionId, subjectId, teacherId }, { rejectWithValue })=>{
     try {
-        console.log(" iam at assign subject", sectionId, subjectId, teacherId);
         const res = await __TURBOPACK__imported__module__$5b$project$5d2f$Utils$2f$axiosInstance$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post(`/section/add/assignSubject/${sectionId}`, {
             subjectId,
             teacherId
@@ -938,7 +930,6 @@ const ViewClasses = ()=>{
     };
     const handleView = (classId)=>{
         const classData = classes.find((item)=>item._id === classId);
-        console.log(classData);
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$classSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["setClass"])(classData));
         router.push("/Dashboard/Section/SectionList");
     };

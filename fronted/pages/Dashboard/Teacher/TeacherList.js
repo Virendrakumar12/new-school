@@ -51,7 +51,7 @@ const TeacherListPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      console.log("id",id);
+     
      
       dispatch(deleteTeacher(id))
     } catch (err) {

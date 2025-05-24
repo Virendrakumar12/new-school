@@ -7,7 +7,7 @@ const HomeCard = () => {
   
 
   const { dashboardCounts, loading, error } = useSelector((state) => state.schoolLogin);
- console.log("dasjbaoard count",dashboardCounts.totalTeachers)
+ 
   const [schoolStats, setSchoolStats] = useState({
     studentCount: 0,
     teacherCount: 0,

@@ -41,7 +41,7 @@ module.exports = (io) => {
     // Send a message
     socket.on('sendMessage', async (data) => {
         try {
-          console.log("Received data", data);
+          
           const { senderId, receiverId, message, senderType, receiverType } = data;
       
           const senderObjectId = new mongoose.Types.ObjectId(senderId);
@@ -77,7 +77,7 @@ module.exports = (io) => {
             conversation.lastMessage = message;
             await conversation.save();
           }
-      console.log("onlike users",onlineUsers);
+      
           // Emit to receiver if online
           if (onlineUsers[receiverId]) {
              newMessage.status = 'delivered';
@@ -99,9 +99,7 @@ module.exports = (io) => {
           // Emit to sender (optional, for confirmation)
           io.to(socket.id).emit('newMessage', newMessage);
 
-          console.log('onlineUsers keys:', Object.keys(onlineUsers));
-          console.log('Looking for receiverId:', receiverId);
-          console.log('onlineUsers[receiverId]:', onlineUsers[receiverId]);
+          
           
           console.log('Message sent successfully');
         } catch (error) {

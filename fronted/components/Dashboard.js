@@ -14,7 +14,7 @@ function Dashboard({children}) {
   const handleLogout=()=>{
     dispatch(logoutSchool)
   }
-console.log("school info",schoolInfo)
+
   const menuItems = [
     {
       title: 'CLASS',

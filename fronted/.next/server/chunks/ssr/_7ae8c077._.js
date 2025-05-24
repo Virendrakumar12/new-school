@@ -177,7 +177,6 @@ const ViewClasses = ()=>{
     };
     const handleView = (classId)=>{
         const classData = classes.find((item)=>item._id === classId);
-        console.log(classData);
         dispatch((0, __TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$classSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["setClass"])(classData));
         router.push("/Dashboard/Section/SectionList");
     };

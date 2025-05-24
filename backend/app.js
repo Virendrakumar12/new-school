@@ -22,7 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://new-school-5kv1.vercel.app'
+  'https://new-school-5kv1.vercel.app',
+  'https://www.sunriseinternationalpublicschool.in'
 ];
 const corsOptions = {
     origin:function (origin, callback) {

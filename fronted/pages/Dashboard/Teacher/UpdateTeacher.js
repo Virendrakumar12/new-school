@@ -8,7 +8,7 @@ const UpdateTeacherForm = () => {
   const router=useRouter();
 
   const { teacher } = useSelector((state) => state.teacher);
-  console.log(teacher);
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',

@@ -127,7 +127,7 @@ router.put('/updateFees', async (req, res) => {
 });
 
 router.get("/student/:studentId",async(req,res)=>{
-  console.log("fetch table ",req.params);
+  
  const { studentId } = req.params;
 console.log("student id",studentId)
   try {

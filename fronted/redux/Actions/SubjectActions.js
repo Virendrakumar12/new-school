@@ -59,9 +59,9 @@ export const deleteSubject = createAsyncThunk(
   'subject/delete',
   async (id, { rejectWithValue }) => {
     try {
-      console.log("subject id",id)
+      
       const res = await axiosInstance.delete(`/subject/deleteSubject/${id}`);
-      console.log("subject res ",res)
+      
       return  res.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || 'Failed to delete subject');

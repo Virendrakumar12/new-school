@@ -9,7 +9,7 @@ export const createSection = createAsyncThunk(
   'section/create',
   async ({ sectionName, classId }, { rejectWithValue }) => {
     try {
-        console.log(sectionName,classId)
+        
       const res = await axiosInstance.post('/section/addSection', { sectionName, classId });
       return res.data;
     } catch (error) {
@@ -29,7 +29,7 @@ export const updateSection = createAsyncThunk(
         classTeacher,
         subjects,
       });
-      console.log("i am action of section controller",res.data);
+      
       return res.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.error || 'Failed to update section');
@@ -41,7 +41,7 @@ export const updateSection = createAsyncThunk(
     'section/delete',
     async (sectionId, { rejectWithValue }) => {
       try {
-        console.log("section id",sectionId)
+       
         const res = await axiosInstance.delete(`/section/deleteSection/${sectionId}`);
         return res.data;
       } catch (error) {
@@ -67,10 +67,10 @@ export const updateSection = createAsyncThunk(
     'section/getByClassId',
     async (classId, { rejectWithValue }) => {
       try {
-        console.log("i am get by classId",classId);
+       
         const response = await axiosInstance.get(`/section/getAllSectionById/${classId}`);
-        console.log("in action part of get section by classid ",response);
-        console.log("res.data",response.data);
+       
+        
         const cleanedData = response.data.filter(item => item !== null && typeof item === 'object');
         return cleanedData;
       } catch (error) {
@@ -96,7 +96,7 @@ export const updateSection = createAsyncThunk(
     'section/assignSubject',
     async ({ sectionId, subjectId, teacherId }, { rejectWithValue }) => {
       try {
-              console.log(" iam at assign subject",sectionId,subjectId,teacherId);
+             
         const res = await axiosInstance.post(`/section/add/assignSubject/${sectionId}`, {
           subjectId,
           teacherId,
