@@ -255,6 +255,7 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 ;
 ;
 ;
+;
 function Dashboard({ children }) {
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(true);
     const [activeMenu, setActiveMenu] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(null);
@@ -264,6 +265,11 @@ function Dashboard({ children }) {
     const handleLogout = ()=>{
         dispatch(__TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$schoolSlice$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["logoutSchool"]);
     };
+    (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) {
+            "TURBOPACK unreachable";
+        }
+    }, []);
     const menuItems = [
         {
             title: 'CLASS',
@@ -362,7 +368,7 @@ function Dashboard({ children }) {
                                 children: "School Dashboard"
                             }, void 0, false, {
                                 fileName: "[project]/components/Dashboard.js",
-                                lineNumber: 89,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -380,23 +386,23 @@ function Dashboard({ children }) {
                                         d: "M6 18L18 6M6 6l12 12"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Dashboard.js",
-                                        lineNumber: 95,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Dashboard.js",
-                                    lineNumber: 94,
+                                    lineNumber: 102,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Dashboard.js",
-                                lineNumber: 90,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Dashboard.js",
-                        lineNumber: 88,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("nav", {
@@ -423,12 +429,12 @@ function Dashboard({ children }) {
                                                             d: item.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Dashboard.js",
-                                                            lineNumber: 109,
+                                                            lineNumber: 117,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Dashboard.js",
-                                                        lineNumber: 108,
+                                                        lineNumber: 116,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -436,13 +442,13 @@ function Dashboard({ children }) {
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Dashboard.js",
-                                                        lineNumber: 111,
+                                                        lineNumber: 119,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Dashboard.js",
-                                                lineNumber: 107,
+                                                lineNumber: 115,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
@@ -457,18 +463,18 @@ function Dashboard({ children }) {
                                                     d: "M19 9l-7 7-7-7"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Dashboard.js",
-                                                    lineNumber: 119,
+                                                    lineNumber: 127,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Dashboard.js",
-                                                lineNumber: 113,
+                                                lineNumber: 121,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/Dashboard.js",
-                                        lineNumber: 103,
+                                        lineNumber: 111,
                                         columnNumber: 15
                                     }, this),
                                     activeMenu === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -479,29 +485,29 @@ function Dashboard({ children }) {
                                                 children: subItem.name
                                             }, subIndex, false, {
                                                 fileName: "[project]/components/Dashboard.js",
-                                                lineNumber: 125,
+                                                lineNumber: 133,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/Dashboard.js",
-                                        lineNumber: 123,
+                                        lineNumber: 131,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/components/Dashboard.js",
-                                lineNumber: 102,
+                                lineNumber: 110,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/Dashboard.js",
-                        lineNumber: 100,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Dashboard.js",
-                lineNumber: 84,
+                lineNumber: 92,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -527,22 +533,14 @@ function Dashboard({ children }) {
                                             d: "M4 6h16M4 12h16M4 18h16"
                                         }, void 0, false, {
                                             fileName: "[project]/components/Dashboard.js",
-                                            lineNumber: 150,
+                                            lineNumber: 158,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/Dashboard.js",
-                                        lineNumber: 149,
+                                        lineNumber: 157,
                                         columnNumber: 15
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Dashboard.js",
-                                    lineNumber: 145,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                    className: "text-xl font-semibold text-gray-800",
-                                    children: ` ${schoolInfo.school.schoolName}`
                                 }, void 0, false, {
                                     fileName: "[project]/components/Dashboard.js",
                                     lineNumber: 153,
@@ -550,21 +548,29 @@ function Dashboard({ children }) {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                     className: "text-xl font-semibold text-gray-800",
+                                    children: ` ${schoolInfo.school.schoolName}`
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Dashboard.js",
+                                    lineNumber: 161,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    className: "text-xl font-semibold text-gray-800",
                                     children: `Welcome Back ${schoolInfo.school.principal}`
                                 }, void 0, false, {
                                     fileName: "[project]/components/Dashboard.js",
-                                    lineNumber: 154,
+                                    lineNumber: 162,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Dashboard.js",
-                            lineNumber: 144,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Dashboard.js",
-                        lineNumber: 143,
+                        lineNumber: 151,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -572,19 +578,19 @@ function Dashboard({ children }) {
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/components/Dashboard.js",
-                        lineNumber: 158,
+                        lineNumber: 166,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Dashboard.js",
-                lineNumber: 142,
+                lineNumber: 150,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Dashboard.js",
-        lineNumber: 82,
+        lineNumber: 90,
         columnNumber: 5
     }, this);
 }
@@ -2200,6 +2206,7 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$
 ;
 ;
 ;
+;
 function TeacherDashboard({ children }) {
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(true);
     const [activeMenu, setActiveMenu] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(null);
@@ -2210,6 +2217,11 @@ function TeacherDashboard({ children }) {
         classCount: 0,
         parentCount: 0
     });
+    (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) {
+            "TURBOPACK unreachable";
+        }
+    }, []);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(true);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])('');
     /* useEffect(() => {
@@ -2300,7 +2312,7 @@ function TeacherDashboard({ children }) {
                                 children: "School Dashboard"
                             }, void 0, false, {
                                 fileName: "[project]/components/TeacherDashboard.js",
-                                lineNumber: 93,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -2318,23 +2330,23 @@ function TeacherDashboard({ children }) {
                                         d: "M6 18L18 6M6 6l12 12"
                                     }, void 0, false, {
                                         fileName: "[project]/components/TeacherDashboard.js",
-                                        lineNumber: 99,
+                                        lineNumber: 109,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/TeacherDashboard.js",
-                                    lineNumber: 98,
+                                    lineNumber: 108,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/TeacherDashboard.js",
-                                lineNumber: 94,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/TeacherDashboard.js",
-                        lineNumber: 92,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("nav", {
@@ -2361,12 +2373,12 @@ function TeacherDashboard({ children }) {
                                                             d: item.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/TeacherDashboard.js",
-                                                            lineNumber: 113,
+                                                            lineNumber: 123,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/TeacherDashboard.js",
-                                                        lineNumber: 112,
+                                                        lineNumber: 122,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -2374,13 +2386,13 @@ function TeacherDashboard({ children }) {
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/TeacherDashboard.js",
-                                                        lineNumber: 115,
+                                                        lineNumber: 125,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/TeacherDashboard.js",
-                                                lineNumber: 111,
+                                                lineNumber: 121,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
@@ -2395,18 +2407,18 @@ function TeacherDashboard({ children }) {
                                                     d: "M19 9l-7 7-7-7"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/TeacherDashboard.js",
-                                                    lineNumber: 123,
+                                                    lineNumber: 133,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/TeacherDashboard.js",
-                                                lineNumber: 117,
+                                                lineNumber: 127,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/TeacherDashboard.js",
-                                        lineNumber: 107,
+                                        lineNumber: 117,
                                         columnNumber: 15
                                     }, this),
                                     activeMenu === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -2417,29 +2429,29 @@ function TeacherDashboard({ children }) {
                                                 children: subItem.name
                                             }, subIndex, false, {
                                                 fileName: "[project]/components/TeacherDashboard.js",
-                                                lineNumber: 129,
+                                                lineNumber: 139,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/TeacherDashboard.js",
-                                        lineNumber: 127,
+                                        lineNumber: 137,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/components/TeacherDashboard.js",
-                                lineNumber: 106,
+                                lineNumber: 116,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/TeacherDashboard.js",
-                        lineNumber: 104,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/TeacherDashboard.js",
-                lineNumber: 88,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -2465,17 +2477,17 @@ function TeacherDashboard({ children }) {
                                             d: "M4 6h16M4 12h16M4 18h16"
                                         }, void 0, false, {
                                             fileName: "[project]/components/TeacherDashboard.js",
-                                            lineNumber: 154,
+                                            lineNumber: 164,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/TeacherDashboard.js",
-                                        lineNumber: 153,
+                                        lineNumber: 163,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/TeacherDashboard.js",
-                                    lineNumber: 149,
+                                    lineNumber: 159,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -2483,18 +2495,18 @@ function TeacherDashboard({ children }) {
                                     children: "Welcome Back, Admin"
                                 }, void 0, false, {
                                     fileName: "[project]/components/TeacherDashboard.js",
-                                    lineNumber: 157,
+                                    lineNumber: 167,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/TeacherDashboard.js",
-                            lineNumber: 148,
+                            lineNumber: 158,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/TeacherDashboard.js",
-                        lineNumber: 147,
+                        lineNumber: 157,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -2502,19 +2514,19 @@ function TeacherDashboard({ children }) {
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/components/TeacherDashboard.js",
-                        lineNumber: 161,
+                        lineNumber: 171,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/TeacherDashboard.js",
-                lineNumber: 146,
+                lineNumber: 156,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/TeacherDashboard.js",
-        lineNumber: 86,
+        lineNumber: 96,
         columnNumber: 5
     }, this);
 }
@@ -2589,6 +2601,7 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$
 ;
 ;
 ;
+;
 function StudentDashboard({ children }) {
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(true);
     const [activeMenu, setActiveMenu] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(null);
@@ -2599,6 +2612,11 @@ function StudentDashboard({ children }) {
         classCount: 0,
         parentCount: 0
     });
+    (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) {
+            "TURBOPACK unreachable";
+        }
+    }, []);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(true);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])('');
     /* useEffect(() => {
@@ -2679,7 +2697,7 @@ function StudentDashboard({ children }) {
                                 children: "School Dashboard"
                             }, void 0, false, {
                                 fileName: "[project]/components/StudentDashboard.js",
-                                lineNumber: 84,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -2697,23 +2715,23 @@ function StudentDashboard({ children }) {
                                         d: "M6 18L18 6M6 6l12 12"
                                     }, void 0, false, {
                                         fileName: "[project]/components/StudentDashboard.js",
-                                        lineNumber: 90,
+                                        lineNumber: 100,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/StudentDashboard.js",
-                                    lineNumber: 89,
+                                    lineNumber: 99,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/StudentDashboard.js",
-                                lineNumber: 85,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/StudentDashboard.js",
-                        lineNumber: 83,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("nav", {
@@ -2740,12 +2758,12 @@ function StudentDashboard({ children }) {
                                                             d: item.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/StudentDashboard.js",
-                                                            lineNumber: 104,
+                                                            lineNumber: 114,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/StudentDashboard.js",
-                                                        lineNumber: 103,
+                                                        lineNumber: 113,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -2753,13 +2771,13 @@ function StudentDashboard({ children }) {
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/StudentDashboard.js",
-                                                        lineNumber: 106,
+                                                        lineNumber: 116,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/StudentDashboard.js",
-                                                lineNumber: 102,
+                                                lineNumber: 112,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
@@ -2774,18 +2792,18 @@ function StudentDashboard({ children }) {
                                                     d: "M19 9l-7 7-7-7"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/StudentDashboard.js",
-                                                    lineNumber: 114,
+                                                    lineNumber: 124,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/StudentDashboard.js",
-                                                lineNumber: 108,
+                                                lineNumber: 118,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/StudentDashboard.js",
-                                        lineNumber: 98,
+                                        lineNumber: 108,
                                         columnNumber: 15
                                     }, this),
                                     activeMenu === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -2796,29 +2814,29 @@ function StudentDashboard({ children }) {
                                                 children: subItem.name
                                             }, subIndex, false, {
                                                 fileName: "[project]/components/StudentDashboard.js",
-                                                lineNumber: 120,
+                                                lineNumber: 130,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/StudentDashboard.js",
-                                        lineNumber: 118,
+                                        lineNumber: 128,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/components/StudentDashboard.js",
-                                lineNumber: 97,
+                                lineNumber: 107,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/StudentDashboard.js",
-                        lineNumber: 95,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/StudentDashboard.js",
-                lineNumber: 79,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -2844,17 +2862,17 @@ function StudentDashboard({ children }) {
                                             d: "M4 6h16M4 12h16M4 18h16"
                                         }, void 0, false, {
                                             fileName: "[project]/components/StudentDashboard.js",
-                                            lineNumber: 145,
+                                            lineNumber: 155,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/StudentDashboard.js",
-                                        lineNumber: 144,
+                                        lineNumber: 154,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/StudentDashboard.js",
-                                    lineNumber: 140,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -2862,18 +2880,18 @@ function StudentDashboard({ children }) {
                                     children: "Welcome Back, Admin"
                                 }, void 0, false, {
                                     fileName: "[project]/components/StudentDashboard.js",
-                                    lineNumber: 148,
+                                    lineNumber: 158,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/StudentDashboard.js",
-                            lineNumber: 139,
+                            lineNumber: 149,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/StudentDashboard.js",
-                        lineNumber: 138,
+                        lineNumber: 148,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -2881,19 +2899,19 @@ function StudentDashboard({ children }) {
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/components/StudentDashboard.js",
-                        lineNumber: 152,
+                        lineNumber: 162,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/StudentDashboard.js",
-                lineNumber: 137,
+                lineNumber: 147,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/StudentDashboard.js",
-        lineNumber: 77,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 }
@@ -2935,6 +2953,7 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$
 ;
 ;
 ;
+;
 function ParentDashboard({ children }) {
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(true);
     const [activeMenu, setActiveMenu] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(null);
@@ -2945,6 +2964,11 @@ function ParentDashboard({ children }) {
         classCount: 0,
         parentCount: 0
     });
+    (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time falsy", 0) {
+            "TURBOPACK unreachable";
+        }
+    }, []);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(true);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])('');
     /* useEffect(() => {
@@ -3025,7 +3049,7 @@ function ParentDashboard({ children }) {
                                 children: "School Dashboard"
                             }, void 0, false, {
                                 fileName: "[project]/components/ParentDashboard.js",
-                                lineNumber: 86,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -3043,23 +3067,23 @@ function ParentDashboard({ children }) {
                                         d: "M6 18L18 6M6 6l12 12"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ParentDashboard.js",
-                                        lineNumber: 92,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/ParentDashboard.js",
-                                    lineNumber: 91,
+                                    lineNumber: 101,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/ParentDashboard.js",
-                                lineNumber: 87,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ParentDashboard.js",
-                        lineNumber: 85,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("nav", {
@@ -3086,12 +3110,12 @@ function ParentDashboard({ children }) {
                                                             d: item.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ParentDashboard.js",
-                                                            lineNumber: 106,
+                                                            lineNumber: 116,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ParentDashboard.js",
-                                                        lineNumber: 105,
+                                                        lineNumber: 115,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -3099,13 +3123,13 @@ function ParentDashboard({ children }) {
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ParentDashboard.js",
-                                                        lineNumber: 108,
+                                                        lineNumber: 118,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/ParentDashboard.js",
-                                                lineNumber: 104,
+                                                lineNumber: 114,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
@@ -3120,18 +3144,18 @@ function ParentDashboard({ children }) {
                                                     d: "M19 9l-7 7-7-7"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ParentDashboard.js",
-                                                    lineNumber: 116,
+                                                    lineNumber: 126,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ParentDashboard.js",
-                                                lineNumber: 110,
+                                                lineNumber: 120,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/ParentDashboard.js",
-                                        lineNumber: 100,
+                                        lineNumber: 110,
                                         columnNumber: 15
                                     }, this),
                                     activeMenu === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3142,29 +3166,29 @@ function ParentDashboard({ children }) {
                                                 children: subItem.name
                                             }, subIndex, false, {
                                                 fileName: "[project]/components/ParentDashboard.js",
-                                                lineNumber: 122,
+                                                lineNumber: 132,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/ParentDashboard.js",
-                                        lineNumber: 120,
+                                        lineNumber: 130,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/components/ParentDashboard.js",
-                                lineNumber: 99,
+                                lineNumber: 109,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/ParentDashboard.js",
-                        lineNumber: 97,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ParentDashboard.js",
-                lineNumber: 81,
+                lineNumber: 91,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3190,17 +3214,17 @@ function ParentDashboard({ children }) {
                                             d: "M4 6h16M4 12h16M4 18h16"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ParentDashboard.js",
-                                            lineNumber: 147,
+                                            lineNumber: 157,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/ParentDashboard.js",
-                                        lineNumber: 146,
+                                        lineNumber: 156,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/ParentDashboard.js",
-                                    lineNumber: 142,
+                                    lineNumber: 152,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3208,18 +3232,18 @@ function ParentDashboard({ children }) {
                                     children: "Welcome Back, Admin"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ParentDashboard.js",
-                                    lineNumber: 150,
+                                    lineNumber: 160,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ParentDashboard.js",
-                            lineNumber: 141,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/ParentDashboard.js",
-                        lineNumber: 140,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -3227,19 +3251,19 @@ function ParentDashboard({ children }) {
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/components/ParentDashboard.js",
-                        lineNumber: 154,
+                        lineNumber: 164,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ParentDashboard.js",
-                lineNumber: 139,
+                lineNumber: 149,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/ParentDashboard.js",
-        lineNumber: 79,
+        lineNumber: 89,
         columnNumber: 5
     }, this);
 }

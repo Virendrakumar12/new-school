@@ -616,6 +616,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function Dashboard({ children }) {
     _s();
     const [isSidebarOpen, setIsSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(true);
@@ -628,6 +629,17 @@ function Dashboard({ children }) {
     const handleLogout = ()=>{
         dispatch(__TURBOPACK__imported__module__$5b$project$5d2f$redux$2f$Slices$2f$schoolSlice$2e$js__$5b$client$5d$__$28$ecmascript$29$__["logoutSchool"]);
     };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Dashboard.useEffect": ()=>{
+            if ("TURBOPACK compile-time truthy", 1) {
+                const token = localStorage.getItem('token');
+                if (!token) {
+                    router.push('/');
+                }
+                ;
+            }
+        }
+    }["Dashboard.useEffect"], []);
     const menuItems = [
         {
             title: 'CLASS',
@@ -726,7 +738,7 @@ function Dashboard({ children }) {
                                 children: "School Dashboard"
                             }, void 0, false, {
                                 fileName: "[project]/components/Dashboard.js",
-                                lineNumber: 89,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -744,23 +756,23 @@ function Dashboard({ children }) {
                                         d: "M6 18L18 6M6 6l12 12"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Dashboard.js",
-                                        lineNumber: 95,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Dashboard.js",
-                                    lineNumber: 94,
+                                    lineNumber: 102,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Dashboard.js",
-                                lineNumber: 90,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Dashboard.js",
-                        lineNumber: 88,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -787,12 +799,12 @@ function Dashboard({ children }) {
                                                             d: item.icon
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Dashboard.js",
-                                                            lineNumber: 109,
+                                                            lineNumber: 117,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Dashboard.js",
-                                                        lineNumber: 108,
+                                                        lineNumber: 116,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -800,13 +812,13 @@ function Dashboard({ children }) {
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Dashboard.js",
-                                                        lineNumber: 111,
+                                                        lineNumber: 119,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Dashboard.js",
-                                                lineNumber: 107,
+                                                lineNumber: 115,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -821,18 +833,18 @@ function Dashboard({ children }) {
                                                     d: "M19 9l-7 7-7-7"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Dashboard.js",
-                                                    lineNumber: 119,
+                                                    lineNumber: 127,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Dashboard.js",
-                                                lineNumber: 113,
+                                                lineNumber: 121,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/Dashboard.js",
-                                        lineNumber: 103,
+                                        lineNumber: 111,
                                         columnNumber: 15
                                     }, this),
                                     activeMenu === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -843,29 +855,29 @@ function Dashboard({ children }) {
                                                 children: subItem.name
                                             }, subIndex, false, {
                                                 fileName: "[project]/components/Dashboard.js",
-                                                lineNumber: 125,
+                                                lineNumber: 133,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/Dashboard.js",
-                                        lineNumber: 123,
+                                        lineNumber: 131,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/components/Dashboard.js",
-                                lineNumber: 102,
+                                lineNumber: 110,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/Dashboard.js",
-                        lineNumber: 100,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Dashboard.js",
-                lineNumber: 84,
+                lineNumber: 92,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -891,22 +903,14 @@ function Dashboard({ children }) {
                                             d: "M4 6h16M4 12h16M4 18h16"
                                         }, void 0, false, {
                                             fileName: "[project]/components/Dashboard.js",
-                                            lineNumber: 150,
+                                            lineNumber: 158,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/Dashboard.js",
-                                        lineNumber: 149,
+                                        lineNumber: 157,
                                         columnNumber: 15
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Dashboard.js",
-                                    lineNumber: 145,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-xl font-semibold text-gray-800",
-                                    children: ` ${schoolInfo.school.schoolName}`
                                 }, void 0, false, {
                                     fileName: "[project]/components/Dashboard.js",
                                     lineNumber: 153,
@@ -914,21 +918,29 @@ function Dashboard({ children }) {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-xl font-semibold text-gray-800",
+                                    children: ` ${schoolInfo.school.schoolName}`
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Dashboard.js",
+                                    lineNumber: 161,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-xl font-semibold text-gray-800",
                                     children: `Welcome Back ${schoolInfo.school.principal}`
                                 }, void 0, false, {
                                     fileName: "[project]/components/Dashboard.js",
-                                    lineNumber: 154,
+                                    lineNumber: 162,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Dashboard.js",
-                            lineNumber: 144,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Dashboard.js",
-                        lineNumber: 143,
+                        lineNumber: 151,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -936,23 +948,23 @@ function Dashboard({ children }) {
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/components/Dashboard.js",
-                        lineNumber: 158,
+                        lineNumber: 166,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Dashboard.js",
-                lineNumber: 142,
+                lineNumber: 150,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Dashboard.js",
-        lineNumber: 82,
+        lineNumber: 90,
         columnNumber: 5
     }, this);
 }
-_s(Dashboard, "qa+YBXUWDA2ymIXGoiZYHMELvYk=", false, function() {
+_s(Dashboard, "H+OIGOX6x3ZXIWUbW2t988BtX7M=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$redux$2f$dist$2f$react$2d$redux$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["useDispatch"],

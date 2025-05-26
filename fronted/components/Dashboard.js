@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { logoutSchool } from '@/redux/Slices/schoolSlice'
-
+import { useEffect } from 'react'
 function Dashboard({children}) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true)
   const [activeMenu, setActiveMenu] = useState(null)
@@ -14,7 +14,15 @@ function Dashboard({children}) {
   const handleLogout=()=>{
     dispatch(logoutSchool)
   }
-
+   useEffect(() => {
+    if (typeof window !== 'undefined') {
+          const token = localStorage.getItem('token');
+          if (!token){
+            router.push('/')
+          };
+  
+        }
+  }, []);
   const menuItems = [
     {
       title: 'CLASS',

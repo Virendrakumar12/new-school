@@ -95,7 +95,7 @@ exports.loginStudent = async (req, res) => {
     }
 
     // Find parent by parentCode
-    const parent = await Parent.findOne({ code: parentCode });
+    const parent = await Parent.findOne({ parentCode: parentCode });
     if (!parent) {
       return res.status(401).json({ message: 'Invalid Parent Code' });
     }
@@ -107,11 +107,12 @@ exports.loginStudent = async (req, res) => {
 
 
     // Find student with matching DOB and parent
-    student = await Student.findOne({ dob: { $gte: startOfDay, $lte: endOfDay } ,parent: parent._id }).populate("parent");
+    student = await Student.findOne({parent:parent._id }).populate("parent");
     if (!student) {
+      console.log("not found student",student);
       return res.status(401).json({ message: 'Invalid DOB or no student found for this parent' });
     }
-console.log("all clear by student",student)
+
     // Generate token
     const token = jwt.sign(
       {

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-
+import { useEffect } from 'react'
 
 function TeacherDashboard({children}) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true)
@@ -12,6 +12,16 @@ function TeacherDashboard({children}) {
     classCount: 0,
     parentCount: 0
   });
+
+     useEffect(() => {
+    if (typeof window !== 'undefined') {
+          const token = localStorage.getItem('token');
+          if (!token){
+            router.push('/')
+          };
+  
+        }
+  }, []);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
